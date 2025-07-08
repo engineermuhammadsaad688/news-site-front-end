@@ -1,12 +1,13 @@
-// src/services/api.js
 import axios from 'axios';
 
-// Axios instance
+const BASE_URL = process.env.REACT_APP_BASE_URL;
+const JWT_TOKEN = process.env.REACT_APP_JWT_TOKEN;
+
+// Axios instance (optional for GET requests)
 const axiosInstance = axios.create({
-  baseURL: process.env.REACT_APP_BASE_URL,
+  baseURL: BASE_URL,
   headers: {
-    'Content-Type': 'application/json',
-    Authorization: `Bearer ${process.env.REACT_APP_JWT_TOKEN}`,
+    Authorization: `Bearer ${JWT_TOKEN}`,
   },
 });
 
@@ -22,15 +23,29 @@ export const getOne = async (endpoint, id) => {
   return response.data;
 };
 
-// POST
-export const postData = async (endpoint, data) => {
-  const response = await axiosInstance.post(endpoint, data);
+// POST (supports file upload)
+export const postData = async (endpoint, data, options = {}) => {
+  const isFile = options.file || false;
+
+  const headers = {
+    Authorization: `Bearer ${JWT_TOKEN}`,
+    ...(isFile ? {} : { 'Content-Type': 'application/json' }),
+  };
+
+  const response = await axios.post(`${BASE_URL}${endpoint}`, data, { headers });
   return response.data;
 };
 
-// PUT
-export const updateData = async (endpoint, id, data) => {
-  const response = await axiosInstance.put(`${endpoint}/${id}`, data);
+// PUT (supports file upload)
+export const updateData = async (endpoint, id, data, options = {}) => {
+  const isFile = options.file || false;
+
+  const headers = {
+    Authorization: `Bearer ${JWT_TOKEN}`,
+    ...(isFile ? {} : { 'Content-Type': 'application/json' }),
+  };
+
+  const response = await axios.put(`${BASE_URL}${endpoint}/${id}`, data, { headers });
   return response.data;
 };
 
