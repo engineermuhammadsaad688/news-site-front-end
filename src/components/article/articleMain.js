@@ -1,21 +1,31 @@
 import { useEffect, useState } from 'react';
-import './categoryMain.css';
+import './articleMain.css';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 
-
 import { deleteData, getAll, postData, updateData } from '../../services/api';
-import AddCategoryModal from './addCategoryModal';
-import EditCategoryModal from './editCategoryModal';
+import AddArticleModal from './addArticleModal';
+import EditArticleModal from './editArticleModal';
 
-const CategoryMain = () => {
+const ArticleMain = () => {
+  const [articles, setArticles] = useState([]);
   const [categories, setCategories] = useState([]);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [editData, setEditData] = useState(null);
 
   useEffect(() => {
+    fetchArticles();
     fetchCategories();
   }, []);
+
+  const fetchArticles = async () => {
+    try {
+      const data = await getAll('/articles');
+      setArticles(data);
+    } catch (error) {
+      console.error('Error fetching articles:', error);
+    }
+  };
 
   const fetchCategories = async () => {
     try {
@@ -28,10 +38,10 @@ const CategoryMain = () => {
 
   const handleDelete = async (id) => {
     try {
-      await deleteData('/categories', id);
-      fetchCategories();
+      await deleteData('/articles', id);
+      fetchArticles();
     } catch (error) {
-      console.error('Error deleting category:', error);
+      console.error('Error deleting article:', error);
     }
   };
 
@@ -39,40 +49,38 @@ const CategoryMain = () => {
     setIsAddModalOpen(true);
   };
 
-  const handleEdit = (category) => {
-    setEditData(category);
+  const handleEdit = (article) => {
+    setEditData(article);
     setIsEditModalOpen(true);
   };
 
   const handleAddSubmit = async (formData) => {
     try {
-      await postData('/categories', formData);
-      fetchCategories();
+      await postData('/articles', formData, {file:true}); // 'true' for file upload
+      fetchArticles();
       setIsAddModalOpen(false);
     } catch (error) {
-      console.error('Error adding category:', error);
+      console.error('Error adding article:', error);
     }
   };
 
   const handleEditSubmit = async (formData) => {
     try {
-      await updateData('/categories', editData._id, formData);
-      fetchCategories();
+      await updateData('/articles', editData._id, formData, {file:true});
+      fetchArticles();
       setIsEditModalOpen(false);
       setEditData(null);
     } catch (error) {
-      console.error('Error updating category:', error);
+      console.error('Error updating article:', error);
     }
   };
 
   return (
     <div className="table-container">
-      <div className="heading-container">
-        <div className="add-category-button-container">
-          <div><h2>All Categories</h2></div>
-          <div className="add-category-button" onClick={handleAdd}>
-            Add Category
-          </div>
+      <div className="add-category-button-container">
+        <h2>All Articles</h2>
+        <div className="add-category-button" onClick={handleAdd}>
+          Add Article
         </div>
       </div>
 
@@ -80,46 +88,51 @@ const CategoryMain = () => {
         <thead>
           <tr>
             <th>S.No.</th>
-            <th>Category Name</th>
+            <th>Title</th>
             <th>Description</th>
+            <th>Category</th>
+            <th>Image</th>
             <th>Edit</th>
             <th>Delete</th>
           </tr>
         </thead>
         <tbody>
-          {categories.map((item, index) => (
-            <tr key={item._id || index}>
+          {articles.map((item, index) => (
+            <tr key={item._id}>
               <td>{index + 1}</td>
-              <td>{item.name}</td>
+              <td>{item.title}</td>
               <td>{item.description}</td>
+              <td>{item.categoryId?.name}</td>
+              <td>
+                <img src={`http://localhost:5000/uploads/${item.image}`} alt="article" width="50" height="50" />
+              </td>
               <td>
                 <FaEdit onClick={() => handleEdit(item)} className="icon" />
               </td>
               <td>
-                <FaTrash
-                  onClick={() => handleDelete(item._id)}
-                  className="icon delete-icon"
-                />
+                <FaTrash onClick={() => handleDelete(item._id)} className="icon delete-icon" />
               </td>
             </tr>
           ))}
         </tbody>
       </table>
 
-      <AddCategoryModal
+      <AddArticleModal
         isOpen={isAddModalOpen}
         onClose={() => setIsAddModalOpen(false)}
         onSubmit={handleAddSubmit}
+        categories={categories}
       />
 
-      <EditCategoryModal
+      <EditArticleModal
         isOpen={isEditModalOpen}
         onClose={() => setIsEditModalOpen(false)}
         onSubmit={handleEditSubmit}
         initialData={editData}
+        categories={categories}
       />
     </div>
   );
 };
 
-export default CategoryMain;
+export default ArticleMain;

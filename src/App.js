@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
 import SignUp from './Pages/signUp';
 import Category from './Pages/Category';
+import Article from './Pages/Article';
 
 
 
@@ -19,6 +20,8 @@ function App() {
                   <Route path="/category" element={<Category />} />
 
           <Route path="/a" element={<SignUp />} />
+                    <Route path="/article" element={<Article />} />
+
 
 
 
