@@ -7,6 +7,7 @@ import 'font-awesome/css/font-awesome.min.css';
 import SignUp from './Pages/signUp';
 import Category from './Pages/Category';
 import Article from './Pages/Article';
+import AirHome from './Pages/AirHome';
 
 
 
@@ -17,10 +18,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
-                  <Route path="/category" element={<Category />} />
+        <Route path="/category" element={<Category />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/article" element={<Article />} />
+        
+        <Route path="/airHome" element={<AirHome />} />
 
-          <Route path="/a" element={<SignUp />} />
-                    <Route path="/article" element={<Article />} />
 
 
 

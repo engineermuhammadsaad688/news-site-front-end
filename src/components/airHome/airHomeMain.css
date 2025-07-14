@@ -1,0 +1,234 @@
+.first-component {
+    background-color: whitesmoke;
+    height: 100vh;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+
+}
+
+.first-component-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 50px;
+
+}
+
+.top {
+    background-image: url('../../backgroundImages/banner.png');
+    /* background-color: red; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 641px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-component-first-first {
+    display: flex;
+    gap: 20px;
+}
+
+.first-component-first-second {
+    display: flex;
+    gap: 180px;
+}
+
+.first-component-first-second-first,
+.first-component-first-second-second,
+.first-component-first-second-third {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.first-component-first-second-first:hover,
+.first-component-first-second-second:hover,
+.first-component-first-second-third:hover {
+    background-color: red;
+}
+
+.first-component-first-third {
+    background-color: whitesmoke;
+    Border-radius: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.first-component-first-third:hover {
+    background-color: white;
+}
+
+.first-component-first-first-first img {
+    height: 100%;
+    width: 100%;
+}
+
+.first-component-first-first-second {
+    background-color: steelblue;
+}
+
+.first-component-second {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.first-component-second-first {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+.first-component-second-second {
+    background-color: white;
+    border-radius: 60px;
+    padding-left: 50px;
+    padding-right: 10px;
+
+}
+
+.first-component-second-second-first {
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.first-component-second-second-first-first {
+    gap: 32px;
+    display: flex;
+}
+
+.first-component-second-second-first-second {
+    background: #932f2f;
+    display: flex;
+    align-items: center;
+    border-radius: 96% 96%;
+    padding: 10px;
+    size: 100px;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+.second-component {}
+
+.second-component-first {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.second-component-first-first {
+    background-color: darkkhaki;
+
+}
+
+.second-component-first-second {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.second-component-first-second-first {
+    background-image: url('../../backgroundImages/image-1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 131px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-component-first-second-second {
+    background-image: url('../../backgroundImages/image-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 131px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.second-component-first-second-third {
+    background-image: url('../../backgroundImages/image-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 131px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.second-component-first-second-fourth {
+    background-image: url('../../backgroundImages/image-4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 131px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-component-first-second-fifth {
+    background-image: url('../../backgroundImages/image-5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 131px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-component-first-second-six {
+    background-image: url('../../backgroundImages/image-6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 131px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

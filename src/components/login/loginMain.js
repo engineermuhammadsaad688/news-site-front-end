@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import './loginMain.css'
 import { useState } from 'react';
 import { postData } from '../../services/api';
+import { saveTokenToLocalStorage } from '../../utils';
 
 function LoignMain() {
 
@@ -43,8 +44,9 @@ function LoignMain() {
         try {
             // Dummy API call
             const response = await postData('/users/login', formData);
-            console.log('Login successful:', response.data);
+            console.log('Login successful:', response);
 
+            saveTokenToLocalStorage(response.token);   // yahan API ka response dekh lena token ka naam kya hai
             // Redirect to category 
             navigate('/category');
         } catch (error) {

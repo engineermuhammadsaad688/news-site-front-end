@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { getToken } from '../utils';
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
-const JWT_TOKEN = process.env.REACT_APP_JWT_TOKEN;
+const JWT_TOKEN = getToken();;
 
 // Axios instance (optional for GET requests)
 const axiosInstance = axios.create({
