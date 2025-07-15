@@ -12,19 +12,22 @@ function HomeMain() {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const endpoint = searchQuery
-          ? `/articles?search=${searchQuery}`
-          : `/articles`;
-
-        const data = await getAll(endpoint);
+        const params = {};
+  
+        if (searchQuery) {
+          params.search = searchQuery;
+        }
+  
+        const data = await getAll('/articles', params);
         setArticles(data.articles);
       } catch (error) {
-        console.error('Error fetching articles:', error);
+        console.log('Error fetching articles:', error);
       }
     };
-
+  
     fetchArticles();
   }, [searchQuery]);
+  
 
   const handleSearch = () => {
     setSearchQuery(search); // trigger API call
