@@ -3,119 +3,171 @@ import './airHomeMain.css'
 function AirHomeMain() {
     return (
         <>
-            <div className='first-component'>
-
-                <div className='top'>
-                    <div className='first-component-first'>
-                        <div className='first-component-first-first'>
-                            <div className='first-component-first-first-first'>
+            <div className='header-container'>
+                <div className='header-banner'>
+                    <div className='header-top'>
+                        <div className='header-logo-container'>
+                            <div className='logo-wrapper'>
                                 <img src='images/logo.png' alt='profile picture' />
                             </div>
                         </div>
-                        <div className='first-component-first-second'>
-                            <div className='first-component-first-second-first'>
-                                Popular Places                          </div>
-                            <div className='first-component-first-second-second'>
-                                Travel Outside                        </div>
-                            <div className='first-component-first-second-third'>
-                                Online Packages                        </div>
+                        <div className='header-navigation'>
+                            <div className='nav-item'>Popular Places</div>
+                            <div className='nav-item'>Travel Outside</div>
+                            <div className='nav-item'>Online Packages</div>
                         </div>
-                        <div className='first-component-first-third'>
+                        <div className='header-register'>
                             Register Now
                         </div>
                     </div>
 
-
-
-                    <div className='first-component-second'>
-                        <div className='first-component-second-first'>
+                    <div className='search-section'>
+                        <div className='search-heading'>
                             Find Your Next Stay
                         </div>
-                        <div className='first-component-second-second'>
-                            <div className='first-component-second-second-first'>
-                                <div className='first-component-second-second-first-first'>
-                                    <div className='first-component-second-second-first-first-first'>
-                                        <div className='first-component-second-second-first-first-first-first'>
-                                            Location
-
-                                        </div>
-                                        <div className='first-component-second-second-first-first-first-second'>
-                                            Where are you going?
-
-
-                                        </div>
-                                    </div>
-                                    <div className='first-component-second-second-first-first-second'>
-                                        <div className='first-component-second-second-first-first-second-first'>
-                                            Check in
-                                        </div>
-                                        <div className='first-component-second-second-first-first-second-second'>
-                                            Add Dates
-                                        </div>
-                                    </div>
-                                    <div className='first-component-second-second-first-first-third'>
-                                        <div className='first-component-second-second-first-first-third-first'>
-                                            Check out
-                                        </div>
-                                        <div className='first-component-second-second-first-first-third-second'>
-                                            Add Dates
-
-
-                                        </div>
-                                    </div>
-                                    <div className='first-component-second-second-first-first-fourth'>
-                                        <div className='first-component-second-second-first-first-fourth-first'>
-                                            Guests
-
-                                        </div>
-                                        <div className='first-component-second-second-first-first-fourth-second'>
-                                            Add guests
-                                        </div>
-                                    </div>
+                        <div className='search-box'>
+                            <div className='search-fields'>
+                                <div className='field-group'>
+                                    <div className='field-label'>Location</div>
+                                    <div className='field-placeholder'>Where are you going?</div>
                                 </div>
-                                <div className='first-component-second-second-first-second'>
-
-                                    <img src='images/search.png' alt='profile picture' />
-
+                                <div className='field-group'>
+                                    <div className='field-label'>Check in</div>
+                                    <div className='field-placeholder'>Add Dates</div>
+                                </div>
+                                <div className='field-group'>
+                                    <div className='field-label'>Check out</div>
+                                    <div className='field-placeholder'>Add Dates</div>
+                                </div>
+                                <div className='field-group'>
+                                    <div className='field-label'>Guests</div>
+                                    <div className='field-placeholder'>Add guests</div>
                                 </div>
                             </div>
-
-
-
+                            <div className='search-icon'>
+                                <img src='images/search.png' alt='search icon' />
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
-            <div className='second-component'>
-                <div className='second-component-first'>
-                    <div className='second-component-first-first'>
-                        Exclusives
+            <div className='exclusive-container'>
+                <div className='exclusive-content'>
+                    <div className='exclusive-heading'>Exclusives</div>
+                    <div className='exclusive-list'>
+                        <div className='exclusive-item london'>
+                            <div>London</div>
+                            <div>Starts at $350</div>
+                        </div>
+                        <div className='exclusive-item switzerland'>
+                            <div>Switzerland</div>
+                            <div>Starts at $250</div>
+                        </div>
+                        <div className='exclusive-item australia'>
+                            <div>Australia</div>
+                            <div>Starts at $250</div>
+                        </div>
+                        <div className='exclusive-item france'>
+                            <div>France</div>
+                            <div>Starts at $250</div>
+                        </div>
+                        <div className='exclusive-item amsterdam'>
+                            <div>Amsterdam</div>
+                            <div>Starts at $250</div>
+                        </div>
+                        <div className='exclusive-item netherlands'>
+                            <div>Netherlands</div>
+                            <div>Starts at $250</div>
+                        </div>
+                        <div className='exclusive-item newyork'>
+                            <div>New York</div>
+                            <div>Starts at $350</div>
+                        </div>
+                        <div className='exclusive-item chicago'>
+                            <div>Chicago</div>
+                            <div>Starts at $350</div>
+                        </div>
+                        <div className='exclusive-item sanfrancisco '>
+                            <div>San Francisco</div>
+                            <div>Starts at $250</div>
+                        </div>
+                        <div className='exclusive-item shanghai'>
+                            <div>Shanghai</div>
+                            <div>Starts at $250</div>
+                        </div>
                     </div>
-                    <div className='second-component-first-second'>
-                        <div className='second-component-first-second-first'>
-                            s
+                </div>
+            </div>
+            <div className='gallery-section'>
+                <div className='gallery-container'>
+                    <div className='gallery-heading'>
+                        Trending Places
+                    </div>
+                    <div className='gallery-grid'>
+                        <div className='gallery-column-left'>
+                            <div className='gallery-image-large'>
+                                <img src='images/dubai.png' alt='profile picture' />
+                            </div>
+                            <div className='gallery-title-large'>
+                                Dubai
+                            </div>
                         </div>
-                        <div className='second-component-first-second-second'>
-                            s
+                        <div className='gallery-column-right'>
+                            <div className='gallery-image-top-right'>
+                                <img src='images/new-york.png' alt='profile picture' />
+                            </div>
+                            <div className='gallery-title-top-right'>
+                                New York
+                            </div>
                         </div>
-                        <div className='second-component-first-second-third'>
-                            s
+                        <div className='gallery-column-right'>
+                            <div className='gallery-image-bottom-left'>
+                                <img src='images/paris.png' alt='profile picture' />
+                            </div>
+                            <div className='gallery-title-bottom-left'>
+                                Paris
+                            </div>
                         </div>
-                        <div className='second-component-first-second-fourth'>
-                            s
-                        </div>
-                        <div className='second-component-first-second-fifth'>
-                            s
-                        </div>
-                        <div className='second-component-first-second-six'>
-                            s
+                        <div className='gallery-column-right'>
+                            <div className='gallery-image-bottom-right'>
+                                <img src='images/new-delhi.png' alt='profile picture' />
+                            </div>
+                            <div className='gallery-title-bottom-right'>
+                                New Delhi
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className='banner-section'>
+                <div className='banner-container'>
+                    <div className='banner-card'>
+                        <div className='banner-heading'>
+                            Sharing <br />
+                            Is Earning Now
+                        </div>
+                        <div className='banner-subtext'>
+                            Great opportunity to make money by <br />sharing your extra space.
+                        </div>
+                        <div className='banner-button'>
+                            Know more
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className='fifth-component'>
+                <div className='fifth-component-first'>
+                    Travellers stories
+                </div>
+                <div className='fifth-component-second'>
 
                 </div>
 
             </div>
+
+
+
 
         </>
 
