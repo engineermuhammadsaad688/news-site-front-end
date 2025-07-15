@@ -104,7 +104,7 @@ const ArticleMain = () => {
               <td>{item.description}</td>
               <td>{item.categoryId?.name}</td>
               <td>
-                <img src={`http://localhost:5000/uploads/${item.image}`} alt="article" width="50" height="50" />
+                <img src={`http://localhost:5000/api/uploads/${item.image}`} alt="article" width="50" height="50" />
               </td>
               <td>
                 <FaEdit onClick={() => handleEdit(item)} className="icon" />

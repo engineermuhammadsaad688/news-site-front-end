@@ -1,7 +1,7 @@
 import './postRightSection.css';
 import RecentPostCard from './recentPostCard';
 
-function PostRightSection() {
+function PostRightSection({ search, setSearch, handleSearch }) {
 
     const recentPosts = [
         {
@@ -56,33 +56,37 @@ function PostRightSection() {
 
     return (
         <div>
-            <div className='post-right-section-search-container'>
-                <div className='post-right-section-heading'>
-                    SEARCH
-                </div>
-
-                <div className='post-right-section-search-box'>
-                    <div className='search-input-container'>
-                        <input type="text" className="search-input" placeholder="Search here..." />
-                    </div>
-
-                    <div className='search-button'>
-                        Search
-                    </div>
-                </div>
-            </div>
-
-            {recentPosts.map((post, index) => (
-                <RecentPostCard 
-                    key={index}
-                    imageSrc={post.imageSrc}
-                    description={post.description}
-                    category={post.category}
-                    date={post.date}
+          <div className='post-right-section-search-container'>
+            <div className='post-right-section-heading'>SEARCH</div>
+    
+            <div className='post-right-section-search-box'>
+              <div className='search-input-container'>
+                <input
+                  type="text"
+                  className="search-input"
+                  placeholder="Search here..."
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
                 />
-            ))}
+              </div>
+    
+              <div className='search-button' onClick={handleSearch}>
+                Search
+              </div>
+            </div>
+          </div>
+    
+          {recentPosts.map((post, index) => (
+            <RecentPostCard
+              key={index}
+              imageSrc={post.imageSrc}
+              description={post.description}
+              category={post.category}
+              date={post.date}
+            />
+          ))}
         </div>
-    );
-}
-
-export default PostRightSection;
+      );
+    }
+    
+    export default PostRightSection;
