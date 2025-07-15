@@ -2,14 +2,19 @@ import axios from 'axios';
 import { getToken } from '../utils';
 
 const BASE_URL = process.env.REACT_APP_BASE_URL;
-const JWT_TOKEN = getToken();;
 
-// Axios instance (optional for GET requests)
+// Create axios instance
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
-  headers: {
-    Authorization: `Bearer ${JWT_TOKEN}`,
-  },
+});
+
+// 🔁 Always attach the latest token before each request
+axiosInstance.interceptors.request.use((config) => {
+  const token = getToken(); // ✅ fetch latest token
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
 });
 
 // GET all
@@ -28,8 +33,9 @@ export const getOne = async (endpoint, id) => {
 export const postData = async (endpoint, data, options = {}) => {
   const isFile = options.file || false;
 
+  const token = getToken();
   const headers = {
-    Authorization: `Bearer ${JWT_TOKEN}`,
+    Authorization: `Bearer ${token}`,
     ...(isFile ? {} : { 'Content-Type': 'application/json' }),
   };
 
@@ -41,8 +47,9 @@ export const postData = async (endpoint, data, options = {}) => {
 export const updateData = async (endpoint, id, data, options = {}) => {
   const isFile = options.file || false;
 
+  const token = getToken();
   const headers = {
-    Authorization: `Bearer ${JWT_TOKEN}`,
+    Authorization: `Bearer ${token}`,
     ...(isFile ? {} : { 'Content-Type': 'application/json' }),
   };
 

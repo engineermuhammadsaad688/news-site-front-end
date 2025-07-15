@@ -1,4 +1,6 @@
 import './postCard.css';
+import { useNavigate } from 'react-router-dom';
+
 
 function PostCard(props) {
         const {
@@ -8,7 +10,15 @@ function PostCard(props) {
         author,
         date,
         description,
+        articleId,
     } = props;
+
+    const navigate = useNavigate();
+
+    
+const handleNavigate = () => {
+    navigate(`/article-detail/${articleId}`);
+  };
 
     return (
 
@@ -72,7 +82,7 @@ function PostCard(props) {
                 </div>
 
                 <div className='post-footer-right'>
-                    <div className='post-footer-right-read-more'>
+                    <div className='post-footer-right-read-more'  onClick={handleNavigate} style={{ cursor: 'pointer' }}>
                         Read More
                     </div>
                 </div>
