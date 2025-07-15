@@ -40,6 +40,7 @@ const [articles, setArticles] = useState([]);
                         author={article.userId.name}
                         date={article.createdAt}
                         description={article.description}
+                        articleId={article._id}
                     />
                 ))}
             </div>
