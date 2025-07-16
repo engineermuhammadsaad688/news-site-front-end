@@ -21,7 +21,7 @@ const ArticleMain = () => {
   const fetchArticles = async () => {
     try {
       const data = await getAll('/articles');
-      setArticles(data);
+      setArticles(data.articles);
     } catch (error) {
       console.error('Error fetching articles:', error);
     }
@@ -97,7 +97,7 @@ const ArticleMain = () => {
           </tr>
         </thead>
         <tbody>
-          {articles.map((item, index) => (
+          {articles?.map((item, index) => (
             <tr key={item._id}>
               <td>{index + 1}</td>
               <td>{item.title}</td>

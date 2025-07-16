@@ -6,7 +6,7 @@ function AirHomeMain() {
             <div className='first-component'>
 
                 <div className='top'>
-                    <div className='first-component-first'>
+                    <div className='first-cpomponent-first'>
                         <div className='first-component-first-first'>
                             <div className='first-component-first-first-first'>
                                 <img src='images/logo.png' alt='profile picture' />
