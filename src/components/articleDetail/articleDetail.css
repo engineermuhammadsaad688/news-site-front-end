@@ -1,12 +1,21 @@
+.article-detail-main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
 .signup-container-ariticle-detail {
   height: 100%;
-  width: 60%;
+  width: 50%;
   background-color: whitesmoke;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border: 1px solid grey;
+  margin-top: 40px;
 
 }
 

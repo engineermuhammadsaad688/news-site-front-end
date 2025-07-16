@@ -67,6 +67,7 @@ const { id } = useParams(); // 👈 extract article ID from URL
 
 
     return (
+        <div className='article-detail-main-container'>
 
         <div className='signup-container-ariticle-detail'>
 
@@ -143,6 +144,7 @@ const { id } = useParams(); // 👈 extract article ID from URL
   ))}
 </div>
 
+        </div>
         </div>
     );
 }

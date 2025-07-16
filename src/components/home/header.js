@@ -1,21 +1,35 @@
-import './header.css'
+import './header.css';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
-    return (
-        <div className='header-container'>
-            <div className='logo-container'>
-                <img src="/images/news.jpg" alt="logo" />
-            </div>
+  const navigate = useNavigate();
 
-            <div className='navbar'>
-                <div className='nav-item'>Home</div>
-                <div className='nav-item'>Business</div>
-                <div className='nav-item'>Sports</div>
-                <div className='nav-item'>Entertainment</div>
-                <div className='nav-item'>Politics</div>
-            </div>
-        </div>
-    );
+  const navItems = [
+    { name: 'Home', path: '/' },
+    { name: 'Users', path: '/dashboard' },
+    { name: 'Categories', path: '/category' },
+    { name: 'Articles', path: '/article' }
+  ];
+
+  return (
+    <div className='header-container'>
+      <div className='logo-container'>
+        <img src="/images/news.jpg" alt="logo" />
+      </div>
+
+      <div className='navbar'>
+        {navItems.map((item, index) => (
+          <div
+            key={index}
+            className='nav-item'
+            onClick={() => navigate(item.path)}
+          >
+            {item.name}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Header;

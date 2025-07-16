@@ -3,6 +3,7 @@ import { getAll } from '../../services/api';
 import PostCard from './postCard';
 import PostRightSection from './postRightSection';
 import './homeMain.css';
+import { formatDateTime } from '../../utils';
 
 function HomeMain() {
   const [articles, setArticles] = useState([]);
@@ -10,7 +11,7 @@ function HomeMain() {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-  const itemsPerPage = 2; // You can change this to 10 or any number
+  const itemsPerPage = 10// You can change this to 10 or any number
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
   const [users, setUsers] = useState([]);
@@ -105,7 +106,7 @@ function HomeMain() {
             title={article.title}
             category={article.categoryId.name}
             author={article.userId.name}
-            date={article.createdAt}
+            date={formatDateTime(article.createdAt)}
             description={article.description}
             articleId={article._id}
           />
