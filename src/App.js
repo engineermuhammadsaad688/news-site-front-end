@@ -23,6 +23,9 @@ function App() {
         <Route path="/article" element={<Article />} />
         
         <Route path="/airHome" element={<AirHome />} />
+                <Route path="/Mainhome" element={<MainHome />} />
+
+
 
 
 
