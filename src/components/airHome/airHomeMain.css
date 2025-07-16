@@ -9,7 +9,7 @@
 .header-top {
     display: flex;
     align-items: center;
-    gap: 60px;
+    justify-content: space-between;
 }
 
 .header-banner {
@@ -20,7 +20,6 @@
     height: 641px;
     width: 100%;
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -35,8 +34,7 @@
 }
 
 .header-navigation {
-    display: flex;
-    gap: 180px;
+display: contents;
 }
 
 .nav-item {
@@ -80,7 +78,7 @@
 .search-box {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 60px;
     padding-left: 20px;
     padding-right: 20px;
@@ -285,16 +283,19 @@
 
 
 .banner-section {
-    height: 100vh;
+
+    background-color: whitesmoke;
+
 }
 
 .banner-container {
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
     gap: 60px;
     padding-left: 120px;
     padding-right: 120px;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .banner-card {
@@ -307,6 +308,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 10px;
@@ -325,30 +327,177 @@
 
 .banner-button {
     background-color: #FF6B6B;
-    width: 10%;
+    width: 20%;
     color: white;
-    border: none;
-    padding-left: 40px;
+    padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 8px;
-    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     margin-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .banner-button:hover {
-    background-color:#00008b;
+    background-color: #00008b;
     transform: scale(1.100);
 }
-.fifth-component{
+
+.travel-stories-section {
+    background-color: whitesmoke;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.travel-stories-heading {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.travel-stories-cards {
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+    color: white;
+    margin-top: 17px;
+}
+
+.travel-story-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 370px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.europe-story {
+    background-image: url('../../backgroundImages/story-1.png');
+}
+
+.world-tour-story {
+    background-image: url('../../backgroundImages/story-2.png');
+}
+
+.thailand-story {
+    background-image: url('../../backgroundImages/story-3.png');
+}
+
+.centered-button-wrapper {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded-action-button {
+    background-color: #FF6B6B;
+    width: 23%;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.rounded-action-button:hover {
     background-color: #00008b;
 }
-.fifth-component-first{
-    font-weight: bold;
 
+.about-section {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.about-heading {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.about-description {
+    padding-top: 30px;
+    color: #333333;
+}
+
+.footer-container {
+    background-color: #00008b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #00BFFF;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #aaa;
 }
 
 
+
+
+
+.container-class {
+    color: #555;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s;
+        display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.icons {
+
+}

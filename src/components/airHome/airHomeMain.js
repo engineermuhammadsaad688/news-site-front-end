@@ -1,4 +1,7 @@
 import './airHomeMain.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faYoutube, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 function AirHomeMain() {
     return (
@@ -156,15 +159,63 @@ function AirHomeMain() {
                     </div>
                 </div>
             </div>
-            <div className='fifth-component'>
-                <div className='fifth-component-first'>
+            <div className='travel-stories-section'>
+                <div className='travel-stories-heading'>
                     Travellers stories
                 </div>
-                <div className='fifth-component-second'>
+                <div className='travel-stories-cards'>
+                    <div className='travel-story-card europe-story'>
+                        Popular European countries <br />with a budget of Just <br />$10,000
+                    </div>
+                    <div className='travel-story-card world-tour-story'>
+                        Travelled more than 100<br />Countries in less than<br /> a year
+                    </div>
+                    <div className='travel-story-card thailand-story'>
+                        Best experience you get while<br />travelling to Thailand
+                    </div>
+                </div>
+            </div>
+            <div class="centered-button-wrapper">
+                <div class="rounded-action-button">
+                    Start making money
+                </div>
+            </div>
+            <div className='about-section'>
+                <div className='about-heading'>
+                    About Staybnb
+                </div>
+                <div className='about-description'>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000<br />
+                    years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,<br />
+                    from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source
+                </div>
+            </div>
+            <div className="container-class">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <footer class="footer-container">
+                <div class="footer-logo">
+                    <h2>MyWebsite</h2>
+                </div>
+                <div class="footer-social">
+                    <a href="login">home</a>
+                    <a href="signUp">Twitter</a>
+                    <a href="article">LinkedIn</a>
+                    <a href="YouTube">YouTube</a>
+                </div>
+                <div class="footer-copyright">
+                    Footer © 2025, Staybrnb Inc.
+                    <a href="https://github.com/">Saad malik</a>
 
                 </div>
+            </footer>
 
-            </div>
+
+
 
 
 
@@ -173,5 +224,6 @@ function AirHomeMain() {
 
     );
 }
+
 
 export default AirHomeMain;
