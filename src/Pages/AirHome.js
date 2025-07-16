@@ -5,7 +5,6 @@ function AirHome() {
     return (
         <div className='main-container'>
             <AirHomeMain />
-                <AirHomemainpag/>
 
 
         </div>
