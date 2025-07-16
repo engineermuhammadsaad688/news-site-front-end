@@ -34,7 +34,7 @@
 }
 
 .header-navigation {
-display: contents;
+    display: contents;
 }
 
 .nav-item {
@@ -491,10 +491,9 @@ display: contents;
     font-size: 30px;
     cursor: pointer;
     transition: color 0.3s;
-        display: flex;
+    display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-
