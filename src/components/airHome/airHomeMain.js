@@ -209,7 +209,7 @@ function AirHomeMain() {
                 </div>
                 <div class="footer-copyright">
                     Footer © 2025, Staybrnb Inc.
-                    <a href="https://github.com/">Saad malik</a>
+                    <a href="https://github.com/">AirHome</a>
 
                 </div>
             </footer>
