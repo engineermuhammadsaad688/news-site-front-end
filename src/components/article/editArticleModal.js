@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './articleMain.css';
 
-const EditArticleModal = ({ isOpen, onClose, onSubmit, initialData, categories }) => {
+const EditArticleModal = ({ onClose, onSubmit, initialData, categories }) => {
   const [formData, setFormData] = useState({
     title: '',
     description: '',
@@ -12,10 +12,9 @@ const EditArticleModal = ({ isOpen, onClose, onSubmit, initialData, categories }
   useEffect(() => {
     if (initialData) {
       setFormData({
-        title: initialData.title || '',
-        description: initialData.description || '',
-        categoryId: initialData.categoryId?._id || '',
-        image: null,
+        title: initialData.title,
+        description: initialData.description,
+        categoryId: initialData.categoryId?._id
       });
     }
   }, [initialData]);
@@ -39,8 +38,6 @@ const EditArticleModal = ({ isOpen, onClose, onSubmit, initialData, categories }
     }
     onSubmit(data);
   };
-
-  if (!isOpen || !initialData) return null;
 
   return (
     <div className="modal-overlay">

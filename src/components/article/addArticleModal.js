@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './articleMain.css';
 
-const AddArticleModal = ({ isOpen, onClose, onSubmit, categories }) => {
+const AddArticleModal = ({ onClose, onSubmit, categories }) => {
   const [formData, setFormData] = useState({
     title: '',
     description: '',
@@ -25,10 +25,7 @@ const AddArticleModal = ({ isOpen, onClose, onSubmit, categories }) => {
     data.append('categoryId', formData.categoryId);
     data.append('image', formData.image);
     onSubmit(data);
-    setFormData({ title: '', description: '', categoryId: '', image: null });
   };
-
-  if (!isOpen) return null;
 
   return (
     <div className="modal-overlay">
