@@ -1,8 +1,4 @@
 import './airHomeMain.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faYoutube, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
-
 function AirHomeMain() {
     return (
         <>
