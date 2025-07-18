@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import './articleMain.css';
 
@@ -6,25 +7,29 @@ const EditArticleModal = ({ onClose, onSubmit, initialData, categories }) => {
     title: '',
     description: '',
     categoryId: '',
-    image: null,
+    image: '',
   });
 
   useEffect(() => {
-    if (initialData) {
       setFormData({
         title: initialData.title,
         description: initialData.description,
-        categoryId: initialData.categoryId?._id
+        categoryId: initialData.categoryId?._id ,
       });
-    }
-  }, [initialData]);
+  }, []);
 
   const handleChange = (e) => {
-    const { name, value, files } = e.target;
-    setFormData({
-      ...formData,
-      [name]: name === 'image' ? files[0] : value,
-    });
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleFileChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.files[0],
+    }));
   };
 
   const handleSubmit = (e) => {
@@ -33,9 +38,7 @@ const EditArticleModal = ({ onClose, onSubmit, initialData, categories }) => {
     data.append('title', formData.title);
     data.append('description', formData.description);
     data.append('categoryId', formData.categoryId);
-    if (formData.image) {
-      data.append('image', formData.image);
-    }
+    data.append('image', formData.image);
     onSubmit(data);
   };
 
@@ -78,7 +81,12 @@ const EditArticleModal = ({ onClose, onSubmit, initialData, categories }) => {
           </select>
 
           <label>Image (optional):</label>
-          <input type="file" name="image" onChange={handleChange} />
+          <input
+            type="file"
+            name="image"
+            accept="image/*"
+            onChange={handleFileChange}
+          />
 
           <div className="modal-buttons">
             <button type="submit">Update</button>

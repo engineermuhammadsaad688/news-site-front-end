@@ -6,16 +6,23 @@ const AddArticleModal = ({ onClose, onSubmit, categories }) => {
     title: '',
     description: '',
     categoryId: '',
-    image: null,
+    image: '',
   });
 
-  const handleChange = (e) => {
-    const { name, value, files } = e.target;
-    setFormData({
-      ...formData,
-      [name]: name === 'image' ? files[0] : value,
-    });
-  };
+
+    const handleChange = (e) => {
+      setFormData((prev) => ({
+        ...prev,
+        [e.target.name]: e.target.value,
+      }));
+    };
+  
+    const handleFileChange = (e) => {
+      setFormData((prev) => ({
+        ...prev,
+        [e.target.name]: e.target.files[0],
+      }));
+    };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -66,7 +73,7 @@ const AddArticleModal = ({ onClose, onSubmit, categories }) => {
           </select>
 
           <label>Image:</label>
-          <input type="file" name="image" onChange={handleChange} required />
+          <input type="file" name="image" onChange={handleFileChange} required />
 
           <div className="modal-buttons">
             <button type="submit">Add</button>

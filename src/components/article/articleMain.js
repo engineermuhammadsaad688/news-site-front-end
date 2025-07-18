@@ -147,6 +147,7 @@ const ArticleMain = () => {
         </tbody>
       </table>
 {
+  // agar isAddModalOpen ki value true ho gi to modal show ho ga.
 isAddModalOpen &&
       <AddArticleModal
         onClose={() => setIsAddModalOpen(false)}
@@ -155,7 +156,9 @@ isAddModalOpen &&
       />
 }
 
-     { isEditModalOpen && 
+     {
+       // agar isEditModalOpen ki value true ho gi to modal show ho ga.
+     isEditModalOpen && 
       <EditArticleModal
         onClose={() => setIsEditModalOpen(false)}
         onSubmit={handleEditSubmit}
