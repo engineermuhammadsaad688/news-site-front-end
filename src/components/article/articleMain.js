@@ -180,8 +180,8 @@ export default ArticleMain;
 // d=kisi record ko delete kero
 
 // jab hamara componet show ho ga (render ya load ho ga) to app nay useEffect main api calls kerni hain.
-// yahan hum categories ko fetch  ker k la rahay hain ta k drop down main show kewa sakyain. or jitnay articles
-// add ho chukay hain wo b fetch ker k la rahay hian.articles hum articles state main set kewa rahay hia 
+// yahan hum categories ko fetch  ker k la rahay hain ta k drop down main show kerwa sakyain. or jitnay articles
+// add ho chukay hain wo b fetch ker k la rahay hian.articles hum articles state main set krewa rahay hia 
 // us state ko hum table main map kerwa rahay hian.
 
 
