@@ -1,15 +1,12 @@
-import './mainhome.css'
+import './a.css'
 
-
-
-
-function AirHomeMain() {
+function AA() {
     return (
 
         <div className='header-top'>
             <div className='header-logo-container'>
                 <div className='logo-wrapper'>
-                    <img src='images/logo.png' alt='profile picture' />
+                    <img src='images/logo-red.png' alt='profile picture' />
                 </div>
             </div>
             <div className='header-navigation'>
@@ -26,4 +23,4 @@ function AirHomeMain() {
 }
 
 
-export default AirHomeMain;
+export default AA;

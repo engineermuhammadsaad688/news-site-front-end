@@ -1,0 +1,52 @@
+.header-container {
+    height: 100%;
+    width: 100%;
+    padding: 0 31px;
+    box-sizing: border-box;
+}
+
+.header-top {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow yahan lagao */
+    padding: 20px 30px;
+}
+
+.header-logo-container {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-wrapper img {
+    height: 100%;
+    width: 80%;
+}
+
+.header-navigation {
+    display: contents;
+}
+
+.nav-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-item:hover {
+    background-color: darkblue;
+}
+
+.header-register {
+    border-radius: 20px;
+    padding: 8px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header-register:hover {
+    background-color: red;
+}
