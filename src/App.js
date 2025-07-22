@@ -16,7 +16,7 @@ function App() {
 
 
         <Route path="/airHome" element={<AirHome />} />
-        <Route path="" element={<AA />} />
+        <Route path="n" element={<AA />} />
                 <Route path="c" element={< CalculatorPage/>} />
 
 
