@@ -269,3 +269,27 @@
 .location-city {
     font-weight: 500;
 }
+
+.second-component {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.second-component-first {
+
+}
+.second-component-first-first{
+    display: flex;
+    gap: 5px;
+}
+.second-component-first-first-second{
+        display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+.second-component-first-first-second-first{
+            display: flex;
+    gap: 10px;
+    align-items: center;
+}

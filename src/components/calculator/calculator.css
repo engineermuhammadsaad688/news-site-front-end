@@ -1,0 +1,11 @@
+.input{
+    padding: 10px;
+    width: 90%;
+    font-size: 16px;
+}
+.Button{
+    padding: 10 15px;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}

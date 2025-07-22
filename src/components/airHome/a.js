@@ -153,7 +153,35 @@ function AA() {
             </div>
 
             <div className='second-component'>
-                sdcdsds
+                <div className='second-component-first'>
+                    <div className='second-component-first-first'>
+                        <div className='second-component-first-first-first'>
+                            g
+                        </div>
+                        <div className='second-component-first-first-second'>
+                            <div className='second-component-first-first-second-first'>
+                                Hosted by Brandon
+
+                            </div>
+                            <div className='second-component-first-first-second-first'>
+                                <div className='second-component-first-first-second-first-first'>
+                                    ⭐⭐⭐⭐⭐
+
+                                </div>
+                                <div className='second-component-first-first-second-first-second'>
+                                    245 reviews
+                                </div>
+                                <div className='second-component-first-first-second-first-third'>
+                                     Response rate: 100%
+                                </div>
+                                <div className='second-component-first-first-second-first-third'>
+                                     Response time: 60 mins
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
 
