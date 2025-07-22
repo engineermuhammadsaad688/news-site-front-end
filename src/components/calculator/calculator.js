@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
- import './calculator.css'
+import './calculator.css'
 
 function Calculator() {
   const [num1, setNum1] = useState('');
@@ -11,26 +11,30 @@ function Calculator() {
 
 
   const calculate = (operation) => {
-    const a = parseFloat(num1); 
+    const a = parseFloat(num1);
     const b = parseFloat(num2);
 
 
     if (operation === 'add') {
-      setResult(a + b);
+      const data = a + b
+      setResult(data);
     } else if (operation === 'subtract') {
-      setResult(a - b);
+      const data = a - b
+      setResult(data);
     } else if (operation === 'multiply') {
-      setResult(a * b);
+      const data = a * b
+      setResult(data);
     } else if (operation === 'divide') {
-        setResult(a / b);
+      const data = a / b
+      setResult(data);
     }
   };
 
-  const handleChangeNumOne=(e)=>{
+  const handleChangeNumOne = (e) => {
     setNum1(e.target.value)
   }
 
-  const handleChangeNumTwo=(e)=>{
+  const handleChangeNumTwo = (e) => {
     setNum2(e.target.value)
   }
 
