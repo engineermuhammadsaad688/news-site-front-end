@@ -1,12 +1,12 @@
 .header-top {
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    /* Shadow yahan lagao */
     padding: 20px 30px;
     gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .header-logo-container {
@@ -35,8 +35,8 @@
 }
 
 .header-register {
-    
-    
+
+
 
     border-radius: 20px;
     padding: 8px 30px;
@@ -44,13 +44,16 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .property-card-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
 
@@ -59,7 +62,7 @@
     flex-direction: column;
     margin-top: 20px;
     gap: 11px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid gray;
 }
 
 .property-title-section {
@@ -83,38 +86,27 @@
     align-items: center;
     gap: 9px;
 }
-.property-main-image{
+
+.property-main-image {
     width: 50%;
     height: 378px;
 
 
 }
+
 .property-main-image img {
     background-color: white;
     width: 100%;
-        height: 100%    ;
-        border-radius: 20px;
-                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-
-
-}
-
-.property-main-image {}
-
-.property-side-images-row {
-    
-}
-
-.property-side-images-row {}
-
-.property-side-image {
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .property-side-image img {
     height: 186px;
     width: 346px;
     border-radius: 10px;
-                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -127,9 +119,153 @@
 .property-footer-description {
     font-size: 20px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .property-footer-price {
     font-size: 20px;
+    font-weight: 500;
+}
+
+.booking-container {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.booking-card {
+    background-color: antiquewhite;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+}
+
+.booking-checkin-label {
+    font-weight: 500;
+}
+
+.booking-checkout-label {
+    font-weight: 500;
+}
+
+.booking-guests-label {
+    font-weight: 500;
+}
+
+.booking-button {
+    background-color: darkred;
+    width: 20%;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.booking-button:hover {
+    background-color: darkgreen;
+}
+
+.property-overview-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 90px;
+    padding-right: 20px;
+}
+
+.property-feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 1px solid gray;
+    width: 44%;
+}
+
+.feature-icon-wrapper {
+    color: grey;
+    display: flex;
+    margin-top: -20px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-item-description {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-item-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-item-checkin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.property-description {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.property-description-divider {
+    border-bottom: 1px solid gray;
+    width: 63%;
+}
+
+.location-container {
+    padding-left: 89px;
+    padding-right: 30px;
+}
+
+.location-title {
+    font-weight: 600;
+}
+
+.location-map-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
+    height: 500%;
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+.location-container {
+    padding-left: 140px;
+    padding-right: 140px;
+    margin-top: 10px;
+}
+
+.location-details {
+    border-bottom: 1px solid;
+    width: 50%;
+}
+
+.location-city {
     font-weight: 500;
 }

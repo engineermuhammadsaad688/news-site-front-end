@@ -199,7 +199,7 @@ function AirHomeMain() {
                 </div>
                 <div class="footer-social">
                     <a href="login">home</a>
-                    <a href="signUp">Twitter</a>
+                    <a href="/">Twitter</a>
                     <a href="article">LinkedIn</a>
                     <a href="YouTube">YouTube</a>
                 </div>

@@ -15,7 +15,7 @@ function App() {
 
         
         <Route path="/airHome" element={<AirHome />} />
-                <Route path="/a" element={<AA />} />
+                <Route path="" element={<AA />} />
 
 
 

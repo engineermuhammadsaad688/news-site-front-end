@@ -1,28 +1,22 @@
-// import { use, useEffect, useState } from "react";
-// import { getAll } from "../../services/api";
-// import { PostCard } from "PostCard";
-// import { PostRightSection } from "PostRightSection";
-// import './homeMain.css'
-// import { PostRightSection } from "../../services/utils";
-// import { useParams } from "react-router-dom";
-
-
+// import { useEffect, useState } from "react";
+// import { getAll } from '../../services/api';
+// import Postcard from './postCard';
+// import PostRightSection from './PostRightSection';
+// import './homeMain.css';
+// import { formatDataTime } from '../../utils';
 
 // function HomeMain() {
 //     const [articles, setArticles] = useState([]);
 //     const [search, setSearch] = useState('');
-//     const [searchQuery, setSearchQuery] = useState('');
+//     const [searchQurey, setsearchQurey] = useState('');
 //     const [currentPage, setCurrentPage] = useState(1);
-//     const [totalPages, setTotalPages] = useState(1);
-//     const itemsPerPage = 10// You can change this to 10 or any number
+//     const [totalPages, setTotalPages] = useEffect(1);
+//     const itemsPerpage = 10
 //     const [categories, setCategories] = useState([]);
-//     const [selectedCategory, setSelectedCategory] = useState('');
+//     const [selectedcategory, setSelectedCategory] = useState('');
 //     const [users, setUsers] = useState([]);
-//     const [selectedUser, setSelectedUser] = useState('');
-//     const [sortOrder, setSortOrder] = useState('newest');
-
-
-
+//     const [selectedusers, setSelectedusers] = useState('');
+//     const [sortOrder, setOrder] = useState('newest');
 
 //     useEffect(() => {
 //         const fetchUsers = async () => {
@@ -30,88 +24,68 @@
 //                 const data = await getAll('/users');
 //                 setUsers(data);
 //             } catch (error) {
-//                 console.error('Error fecthing user:', error)
+//                 console.error('Error fetching users:', error);
 //             }
 //         };
-//         fetchUsers();
 
-//     }, [])
-
+//         fetchUsers()
+//     }, []);
 
 //     useEffect(() => {
 //         const fetchCategories = async () => {
 //             try {
-//                 const data = await getAll('/Categories')
-//                 setcategories(data)
+//                 const data = await getAll('/categories');
+//                 setCategories(data);
 //             } catch (error) {
-//                 console.error('Error fecthing user:', error)
+//                 console.error('Error fetching categories')
 //             }
 //         };
+//         fetchCategories()
+//     }, []);
 
 
 
-//         fetchCategories();
-//     }, [])
 
 //     useEffect(() => {
-//         const fetchCategories = async () => {
+//         const fetchArticles = async () => {
 //             try {
-//                 const params = {
+//                 const prams = {
 //                     page: currentPage,
-//                     limit: itemsPerPage,
-//                     search: searchQuery,
-//                     category: selectedCategory,
-//                     user: selectedUser,
+//                     limit: itemsPerpage,
+//                     search: searchQurey,
+//                     category: selectedcategory,
+//                     user: selectedusers,
+
 //                 };
 
 //                 switch (sortOrder) {
-//                     case 'newest':
-//                         params.sortBy = 'createdAt';
-//                         params.order = 'desc';
+//                     case 'newest'
+//                     prams.sortBy = 'createdAt';
+//                         prams.order = 'desc';
 //                         break;
-//                     case 'oldest':
-//                         params.sortBy = 'createdAt';
-//                         params.order = 'asc';
+//                     case 'oldest'
+//                     prams.sortBy = 'createdAt';
+//                         prams.order = 'asc';
 //                         break;
-//                     case 'title_asc':
-//                         params.sortBy = 'title';
-//                         params.order = 'asc';
-//                         break;
-//                     case 'title_desc':
-//                         params.sortBy = 'title';
-//                         params.order = 'desc';
-//                         break;
-//                     default:
-//                         break;
+
 //                 }
-//                 const data = await  getAll ('/articles',params);
-//                 setArticles(data.articles)
-//                 setTotalPages(data.TotalPages)
-
-
+//                 const data = await getAll('/articles', prams)
+//                 setArticles(data.Articles);
+//                 setTotalPages(data.totalPages)
+//             } catch (error) {
+//                 console.log('Error fetching  articles:', prams);
 
 //             }
+
 //         };
+//         fetchArticles();
+//     }, [searchQurey, selectedcategory, selectedusers, sortBy, currentPage]);
 
-
-//     }
-//     )
-
-
-
-
-
-
-
+//     const handleSearch = () => {
+//         setsearchQurey(search)
+//     };
 //     return (
-//         <>
-//         </>
-
+//         <></>
 //     );
 // }
-
-
 // export default HomeMain;
-
-
-
