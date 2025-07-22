@@ -152,36 +152,35 @@ function AA() {
                 </div>
             </div>
 
-            <div className='second-component'>
-                <div className='second-component-first'>
-                    <div className='second-component-first-first'>
-                        <div className='second-component-first-first-first'>
-                            g
+            <div className='host-section'>
+                <div className='host-section-container'>
+                    <div className='host-profile'>
+                        <div className='host-image'>
+                            <img src='images/host.png' alt='host profile' />
                         </div>
-                        <div className='second-component-first-first-second'>
-                            <div className='second-component-first-first-second-first'>
-                                Hosted by Brandon
-
-                            </div>
-                            <div className='second-component-first-first-second-first'>
-                                <div className='second-component-first-first-second-first-first'>
-                                    ⭐⭐⭐⭐⭐
-
-                                </div>
-                                <div className='second-component-first-first-second-first-second'>
-                                    245 reviews
-                                </div>
-                                <div className='second-component-first-first-second-first-third'>
-                                     Response rate: 100%
-                                </div>
-                                <div className='second-component-first-first-second-first-third'>
-                                     Response time: 60 mins
-                                </div>
+                        <div className='host-details'>
+                            <div className='host-name'>Hosted by Brandon</div>
+                            <div className='host-stats'>
+                                <div className='host-rating'>⭐⭐⭐⭐⭐</div>
+                                <div className='host-reviews'>245 reviews</div>
+                                <div className='host-response'>Response rate: 100%</div>
+                                <div className='host-response'>Response time: 60 mins</div>
                             </div>
                         </div>
                     </div>
-
                 </div>
+                <div className='contact-host-button'>Contact host</div>
+            </div>
+
+            <div className='third-component'>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="footer">
+                Footer © 2025, Staybrnb Inc.
             </div>
 
 

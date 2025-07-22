@@ -270,26 +270,85 @@
     font-weight: 500;
 }
 
-.second-component {
-    padding-left: 140px;
-    padding-right: 140px;
+.host-section {
+    padding: 0 140px;
 }
 
-.second-component-first {
+.host-section-container {}
 
-}
-.second-component-first-first{
+.host-profile {
     display: flex;
     gap: 5px;
+    padding-left: 20px;
 }
-.second-component-first-first-second{
-        display: flex;
+
+.host-image img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.host-details {
+    display: flex;
     gap: 10px;
     align-items: center;
     flex-direction: column;
 }
-.second-component-first-first-second-first{
-            display: flex;
+
+.host-name {
+    font-weight: 600;
+}
+
+.host-stats {
+    display: flex;
     gap: 10px;
     align-items: center;
+    flex-direction: column;
+}
+
+.host-rating,
+.host-reviews,
+.host-response {
+    font-size: 14px;
+}
+
+.contact-host-button {
+    background-color: darkcyan;
+    border: 1px solid darkblue;
+    color: #333333;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 34px 0 4px 39px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-host-button:hover {
+    background-color: blue;
+}
+
+.contact-host-button:active {
+    background-color: red;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.third-component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+        margin-bottom: 13px;
+
+}
+
+.footer {
+    background-color: #00008b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px;
 }
