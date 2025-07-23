@@ -1,0 +1,74 @@
+import { useState } from 'react';
+import './calculatorMain.css'
+
+function CalculatorMain() {
+    const [num1, setNum1] = useState('')
+    const [num2, setNum2] = useState('')
+    const [result, setResult] = useState('')
+
+
+
+
+
+    const calculate = (operation) => {
+        const a = parseFloat(num1);
+        const b = parseFloat(num2);
+
+
+
+        if (operation === 'add') {
+            const data = a + b
+            setResult(data);
+
+        }
+        else if (operation === 'subtract') {
+            const data = a - b
+            setResult(data);
+        }
+        else if (operation === 'multiply') {
+            const data = a * b
+            setResult(data);
+        } else if (operation === 'divide') {
+            const data = a / b
+            setResult(data);
+        }
+    };
+
+    const handleChangeNumOne = (e) => {
+        setNum1(e.target.value);
+    }
+    const handleChangeNumTwo = (e) => {
+        setNum2(e.target.value);
+    }
+
+    return (
+        <div style={{ padding: 20, maxWidth: 400, margin: 'auto', textAlign: 'center' }}>
+            <h2>Simple Calculator</h2>
+
+            <input
+                type="text"
+                placeholder="First Number"
+                value={num1}
+                onChange={handleChangeNumOne}
+            />
+            <br /><br />
+            <input
+                type="text"
+                placeholder="second Number"
+                value={num2}
+                onChange={handleChangeNumTwo}
+            />
+            <br /><br />
+
+
+            <button onClick={() => calculate('add')}>add</button>
+            <button onClick={() => calculate('subtract')}>minus</button>
+            <button onClick={() => calculate('multiply')}>multiply</button>
+            <button onClick={() => calculate('divide')}>divide</button>
+            <br /><br />
+      <h3>Result: {result}</h3>
+
+        </div>
+    );
+}
+export default CalculatorMain;
