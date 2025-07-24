@@ -6,15 +6,15 @@ import './homeMain.css';
 import { formatDateTime } from '../../utils';
 
 function HomeMain() {
-  const [articles, setArticles] = useState([]);
+  // const [articles, setArticles] = useState([]);
   const [search, setSearch] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const itemsPerPage = 10// You can change this to 10 or any number
-  const [categories, setCategories] = useState([]);
+  // const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
-  const [users, setUsers] = useState([]);
+  // const [users, setUsers] = useState([]);
   const [selectedUser, setSelectedUser] = useState('');
   const [sortOrder, setSortOrder] = useState('newest');
 
