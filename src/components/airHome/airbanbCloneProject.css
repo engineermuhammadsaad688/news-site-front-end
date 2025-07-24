@@ -1,0 +1,106 @@
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header-logo-container {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-wrapper img {
+    height: 100%;
+    width: 80%;
+}
+
+.header-navigation {
+    display: contents;
+}
+
+.nav-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+      text-decoration: none;
+
+}
+
+.nav-item:hover {
+    background-color: darkblue;
+}
+
+.header-register {
+    border-radius: 20px;
+    padding: 8px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.second-component {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.second-component-first {
+    width: 60%;
+}
+
+
+
+.second-component-first-first-second {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.second-component-first-second-first-first img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.second-component-first-second-first-first {
+    height: 158px;
+    width: 43%;
+}
+
+.second-component-first-second-first {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 18px;
+}
+
+
+
+.second-component-first-second-first-second {
+        height: 100px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.second-component-second {
+    background-color: blue;
+    height: 500px;
+    width: 60%;
+}
+.second-component-first-second-second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

@@ -21,7 +21,7 @@ function App() {
         <Route path="c" element={< CalculatorPage />} />
         <Route path="p" element={< CalculatorMain />} />
 
-        <Route path="p" element={< AirbanbCloneProject />} />
+        <Route path="Airbanb" element={< AirbanbCloneProject />} />
 
 
 
