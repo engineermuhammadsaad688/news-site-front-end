@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './a.css'
 
 function AA() {
@@ -12,9 +13,9 @@ function AA() {
                     </div>
                 </div>
                 <div className='header-navigation'>
-                    <div className='nav-item'>Popular Places</div>
-                    <div className='nav-item'>Travel Outside</div>
-                    <div className='nav-item'>Online Packages</div>
+                    <Link to="/airhome" className='nav-item'>Popular Places</Link>
+                    <Link to="air" className='nav-item'>Travel Outside</Link>
+                    <Link to="/Airbanb" className='nav-item'>Online Packages</Link>
                 </div>
                 <div className='header-register'>
                     Register Now

@@ -8,26 +8,37 @@ import AA from './components/airHome/a';
 import CalculatorPage from './Pages/calculatorPage';
 import CalculatorMain from './components/calculatorMain/calculatorMain';
 import AirbanbCloneProject from './components/airHome/airbanbCloneProject';
+import Linkdink from './components/test/linkdink';
 
 
 function App() {
   return (
-    <Router>
-      <Routes>
+    <>
+      <Router>
+        <Routes>
 
 
-        <Route path="/airHome" element={<AirHome />} />
-        <Route path="" element={<AA />} />
-        <Route path="c" element={< CalculatorPage />} />
-        <Route path="p" element={< CalculatorMain />} />
-
-        <Route path="Airbanb" element={< AirbanbCloneProject />} />
+          <Route path="c" element={< CalculatorPage />} />
 
 
 
 
 
 
+        </Routes>
+      </Router>
+      <Router>
+        <Routes>
+
+
+          <Route path="/airHome" element={<AirHome />} />
+          <Route path="air" element={<AA />} />
+          <Route path="Airbanb" element={< AirbanbCloneProject />} />
+          <Route path="CalculatorMain" element={< CalculatorMain />} />
+
+
+        </Routes>
+      </Router>
 
 
 
@@ -35,8 +46,22 @@ function App() {
 
 
 
-      </Routes>
-    </Router>
+            <Router>
+        <Routes>
+
+
+          <Route path="/" element={< Linkdink />} />
+
+
+
+
+
+
+
+
+        </Routes>
+      </Router>
+    </>
   );
 }
 
