@@ -6,9 +6,15 @@ function CalculatorMain() {
     const [num2, setNum2] = useState('')
     const [result, setResult] = useState('')
 
+
+
+
+
     const calculate = (operation) => {
         const a = parseFloat(num1);
         const b = parseFloat(num2);
+
+
 
         if (operation === 'add') {
             const data = a + b
@@ -35,15 +41,17 @@ function CalculatorMain() {
         setNum2(e.target.value);
     }
 
-
     return (
         <div style={{ padding: 20, maxWidth: 400, margin: 'auto', textAlign: 'center' }}>
+            <h2>Simple Calculator</h2>
+
             <input
                 type="text"
                 placeholder="First Number"
                 value={num1}
                 onChange={handleChangeNumOne}
             />
+            <br /><br />
             <input
                 type="text"
                 placeholder="second Number"
@@ -54,6 +62,12 @@ function CalculatorMain() {
 
 
             <button onClick={() => calculate('add')}>add</button>
+            <button onClick={() => calculate('subtract')}>minus</button>
+            <button onClick={() => calculate('multiply')}>multiply</button>
+            <button onClick={() => calculate('divide')}>divide</button>
+            <br /><br />
+      <h3>Result: {result}</h3>
+
         </div>
     );
 }
