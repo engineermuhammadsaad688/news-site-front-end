@@ -54,7 +54,11 @@ function CalculatorMain() {
 
 
             <button onClick={() => calculate('add')}>add</button>
-        </div>
+            <button onClick={() => calculate('subtract')}>minus</button>
+            <button onClick={() => calculate('multiply')}>multiply</button>
+            <button onClick={() => calculate('divide')}>divide</button>
+            <br /><br />        
+            </div>
     );
 }
 export default CalculatorMain;
