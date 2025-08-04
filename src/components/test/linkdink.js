@@ -1,6 +1,7 @@
 import './linkdink.css'
 import React, { useState } from 'react';
 import { FaAngleRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 <FaAngleRight />
 function Linkdink() {
@@ -246,7 +247,7 @@ function Linkdink() {
                       <img src='./images/premium.png' alt='profile' />
                     </div>
                     <div>
-jiejwijiewokjkk
+                      Try Premium
                     </div>
                   </div>
                 </div>
@@ -258,8 +259,131 @@ jiejwijiewokjkk
             </div>
           </div>
           <div className='value-second-component-first-second'>
+            <div className='value-second-component-first-second-first'>
+              <div className='value-second-component-first-second-first-first'>
+                RECENT
 
+              </div>
+              <div className='value-second-component-first-second-first-second'>
+                <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
+                <div
+                >Web Development
+                </div>
+
+              </div>
+              <div className='value-second-component-first-second-first-second'>
+                <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
+                <div
+                >User Interface
+                </div>
+
+              </div>
+              <div className='value-second-component-first-second-first-second'>
+                <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
+                <div
+                >Online Learning
+                </div>
+
+              </div>
+              <div className='value-second-component-first-second-first-second'>
+                <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
+                <div
+                >Learn Online
+                </div>
+
+              </div>
+              <div className='value-second-component-first-second-first-second'>
+                <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
+                <div
+                >Code Better
+                </div>
+
+              </div>
+              <div className='value-second-component-first-second-first-second'>
+                <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
+                <div
+                >Group Learning
+                </div>
+
+              </div>
+            </div>
+            <div className='value-second-component-first-second-second'>
+              <div className='value-second-component-first-second-first'>
+                <div className='value-second-component-first-second-first-first'>
+                  GROUPS
+
+
+                </div>
+                <div className='value-second-component-first-second-first-second'>
+                  <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/group.png' alt='profile' /></div>
+                  <div
+                  >Web Design Group
+                  </div>
+
+                </div>
+                <div className='value-second-component-first-second-first-second'>
+                  <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/group.png' alt='profile' /></div>
+                  <div
+                  >HTML & CSS Learners
+
+                  </div>
+
+                </div>
+                <div className='value-second-component-first-second-first-second'>
+                  <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/group.png' alt='profile' /></div>
+                  <div
+                  >Python & JavaScript Group
+                  </div>
+
+                </div>
+                <div className='value-second-component-first-second-first-second'>
+                  <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/group.png' alt='profile' /></div>
+                  <div
+                  >Learn Coding Online
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div className='value-second-component-first-second-third'>
+              <div className='value-second-component-first-second-second'>
+                <div className='value-second-component-first-second-first'>
+                  <div className='value-second-component-first-second-first-first'>
+                    <a href="https://github.com/engineermuhammadsaad688/news-site-front-end/tree/saad-two/public/linkedink-images">HASHTAG</a>
+
+                  </div>
+                  <div className='value-second-component-first-second-first-second'>
+                    <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/hashtag.png' alt='profile' /></div>
+                    <div
+                    >webdevelopment
+
+                    </div>
+
+                  </div>
+                  <div className='value-second-component-first-second-first-second'>
+                    <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/hashtag.png' alt='profile' /></div>
+                    <div
+                    >userinterface
+
+
+                    </div>
+
+                  </div>
+                  <div className='value-second-component-first-second-first-second'>
+                    <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/hashtag.png' alt='profile' /></div>
+                    <div
+                    >onlinelearning
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
         <div className='value-second-component-second'>
           jweiiueiw
