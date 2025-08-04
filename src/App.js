@@ -9,6 +9,7 @@ import CalculatorPage from './Pages/calculatorPage';
 import CalculatorMain from './components/calculatorMain/calculatorMain';
 import AirbanbCloneProject from './components/airHome/airbanbCloneProject';
 import Linkdink from './components/test/linkdink';
+import HomeMain from './components/home/homeMain';
 
 
 function App() {
@@ -46,7 +47,7 @@ function App() {
 
 
 
-            <Router>
+      <Router>
         <Routes>
 
 
@@ -59,8 +60,13 @@ function App() {
 
 
 
+
         </Routes>
       </Router>
+
+   
+
+
     </>
   );
 }
