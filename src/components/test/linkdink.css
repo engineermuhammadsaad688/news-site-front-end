@@ -345,10 +345,7 @@
   align-items: center;
 }
 
-.linkedin-post-section {
-  width: 713px;
-  margin-left: -45px;
-}
+.linkedin-post-section {}
 
 .linkedin-post-box {
   background-color: whitesmoke;
@@ -423,6 +420,7 @@
 
 .linkedin-post-feed {
   background-color: rebeccapurple;
+  margin-bottom: 20px;
 }
 
 .linkedin-sidebar {
@@ -466,8 +464,8 @@
 }
 
 .linkedin-post-text {
-  height: 330px;
-  width: 560px;
+  height: 336px;
+  width: 688px;
   padding-right: 50px;
   padding-left: 30px;
 }
@@ -605,35 +603,43 @@
   display: flex;
   gap: 10px;
 }
-.post-top-views{
+
+.post-top-views {
   height: 20px;
   width: 20px;
 }
-.post-top-views img{
+
+.post-top-views img {
   height: 100%;
   width: 100%;
 }
-.post-option{
+
+.post-option {
   height: 20px;
   width: 20px;
 }
-.post-option img{
+
+.post-option img {
   height: 100%;
   width: 100%;
 }
-.post-extra-views-level-left{
+
+.post-extra-views-level-left {
   height: 20px;
   width: 20px;
 }
-.post-extra-views-level-left img{
+
+.post-extra-views-level-left img {
   height: 100%;
   width: 100%;
 }
-.post-extra-views-topic-left{
+
+.post-extra-views-topic-left {
   height: 20px;
   width: 20px;
 }
- .post-extra-views-topic-left img{
+
+.post-extra-views-topic-left img {
   height: 100%;
   width: 100%;
 }
