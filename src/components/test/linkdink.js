@@ -1,12 +1,12 @@
 import './linkdink.css'
 import React, { useState } from 'react';
 import { FaAngleRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+
 
 <FaAngleRight />
 function Linkdink() {
 
-  const [activeItem, setActiveItem] = useState('home');
+  const [activeItem, setActiveItem] = useState('in');
   const [showSmallImage, setShowSmallImage] = useState(false);
 
   const toggleSmallImage = () => {
@@ -16,76 +16,75 @@ function Linkdink() {
 
   return (
     <>
-      <div className='first-component'>
-        <div className='first-component-first'>
-          <div className='first-component-first-first'>
-            <div className='first-component-first-first-first'>
-              <img src='images/logo.png' alt='profile picture' />
-
+      <div className="layout-wrapper">
+        <div className="layout-header">
+          <div className="header-left-section">
+            <div className="logo-box">
+              <img src="images/logo.png" alt="profile picture" />
             </div>
 
-            <div className='first-component-first-first-second'>
-              <div class="search-container">
-                <i class="fas fa-search"></i>
+            <div className="search-wrapper">
+              <div className="search-box">
+                <i className="fas fa-search"></i>
                 <input type="text" placeholder="Search" />
               </div>
             </div>
           </div>
-          <div className='first-component-first-second'>
 
+          <div className="nav-items">
             <div
-              className={`first-component-first-second-first ${activeItem === 'home' ? 'active' : ''}`}
+              className={`nav-home ${activeItem === 'home' ? 'active' : ''}`}
               onClick={() => setActiveItem('home')}
             >
-              <div className='first-component-first-second-first-first'>
+              <div className="nav-home-icon">
                 <img src="/images/home.png" alt="React logo" />
               </div>
-              <div className='first-component-first-second-first-second'>Home</div>
+              <div className="nav-home-label">Home</div>
             </div>
 
             <div
-              className={`first-component-first-second-second ${activeItem === 'network' ? 'active' : ''}`}
+              className={`nav-network ${activeItem === 'network' ? 'active' : ''}`}
               onClick={() => setActiveItem('network')}
             >
-              <div className='first-component-first-second-second-first'>
+              <div className="nav-network-icon">
                 <img src="/images/network.png" alt="React logo" />
               </div>
-              <div className='first-component-first-second-second-second'>My Network</div>
+              <div className="nav-network-label">My Network</div>
             </div>
 
             <div
-              className={`first-component-first-second-third ${activeItem === 'jobs' ? 'active' : ''}`}
+              className={`nav-jobs ${activeItem === 'jobs' ? 'active' : ''}`}
               onClick={() => setActiveItem('jobs')}
             >
-              <div className='first-component-first-second-third-first'>
+              <div className="nav-jobs-icon">
                 <img src="/images/jobs.png" alt="React logo" />
               </div>
-              <div className='first-component-first-second-third-second'>Jobs</div>
+              <div className="nav-jobs-label">Jobs</div>
             </div>
 
             <div
-              className={`first-component-first-second-fourth ${activeItem === 'messaging' ? 'active' : ''}`}
+              className={`nav-messaging ${activeItem === 'messaging' ? 'active' : ''}`}
               onClick={() => setActiveItem('messaging')}
             >
-              <div className='first-component-first-second-fourth-first'>
+              <div className="nav-messaging-icon">
                 <img src="/images/message.png" alt="React logo" />
               </div>
-              <div className='first-component-first-second-fourth-second'>Messaging</div>
+              <div className="nav-messaging-label">Messaging</div>
             </div>
 
             <div
-              className={`first-component-first-second-fifth ${activeItem === 'notifications' ? 'active' : ''}`}
+              className={`nav-notifications ${activeItem === 'notifications' ? 'active' : ''}`}
               onClick={() => setActiveItem('notifications')}
             >
-              <div className='first-component-first-second-fifth-first'>
+              <div className="nav-notifications-icon">
                 <img src="/images/notification.png" alt="React logo" />
               </div>
-              <div className='first-component-first-second-fifth-second'>Notifications</div>
+              <div className="nav-notifications-label">Notifications</div>
             </div>
-
           </div>
-          <div className="first-component-third">
-            <div className="first-component-third-first">
+
+          <div className="profile-section">
+            <div className="profile-image-box">
               <img
                 src="./images/user-1.png"
                 alt="React logo"
@@ -97,94 +96,65 @@ function Linkdink() {
 
             {showSmallImage && (
               <div className="small-image">
-                <div className='top-second-component'>
-                  <div className='top-second-component-first'>
-                    <div className='top-second-component-first-first'>
-                      <div className='top-second-component-first-first-first'>
+                <div className='profile-menu-wrapper'>
+                  <div className='profile-menu-container'>
+                    <div className='profile-header'>
+                      <div className='profile-image-wrapper'>
                         <img src='images/user-1.png' alt='profile picture' />
                       </div>
-                      <div className='top-second-component-first-first-second'>
-                        <div className='top-second-component-first-first-second-first'>
-                          Rayan Walton
-                        </div>
-                        <div className='top-second-component-first-first-second-second'>
-                          See your profile
-                        </div>
+                      <div className='profile-info'>
+                        <div className='profile-name'>Rayan Walton</div>
+                        <div className='profile-link'>See your profile</div>
                       </div>
                     </div>
-                    <div className='top-second-component-first-second'>
-                      <div className='top-second-component-first-second-first'>
-                        <div className='top-second-component-first-second-first-first'>
-                          <img src='images/feedback.png' alt='profile picture' />
 
+                    <div className='profile-menu-item'>
+                      <div className='menu-icon-text'>
+                        <div className='menu-icon'>
+                          <img src='images/feedback.png' alt='settings icon' />
                         </div>
-                        <div className='top-second-component-first-second-first-second'>
-                          Settings & Privacy
-                        </div>
-
+                        <div className='menu-text'>Settings & Privacy</div>
                       </div>
-
-
                     </div>
-                    <div className='top-second-component-first-second'>
-                      <div className='top-second-component-first-second-first'>
-                        <div className='top-second-component-first-second-first-first'>
-                          <img src='images/setting.png' alt='profile picture' />
 
+                    <div className='profile-menu-item'>
+                      <div className='menu-icon-text'>
+                        <div className='menu-icon'>
+                          <img src='images/setting.png' alt='help icon' />
                         </div>
-                        <div className='top-second-component-first-second-first-second'>
-                          Help & Support
-                        </div>
-
+                        <div className='menu-text'>Help & Support</div>
                       </div>
-
-
                     </div>
-                    <div className='top-second-component-first-second'>
-                      <div className='top-second-component-first-second-first'>
-                        <div className='top-second-component-first-second-first-first'>
-                          <img src='images/help.png' alt='profile picture' />
 
+                    <div className='profile-menu-item'>
+                      <div className='menu-icon-text'>
+                        <div className='menu-icon'>
+                          <img src='images/help.png' alt='display icon' />
                         </div>
-                        <div className='top-second-component-first-second-first-second'>
-                          Display & Accessibility
-                        </div>
-
+                        <div className='menu-text'>Display & Accessibility</div>
                       </div>
-
                     </div>
-                    <div className='top-second-component-first-second'>
-                      <div className='top-second-component-first-second-first'>
-                        <div className='top-second-component-first-second-first-first'>
-                          <img src='images/display.png' alt='profile picture' />
 
+                    <div className='profile-menu-item'>
+                      <div className='menu-icon-text'>
+                        <div className='menu-icon'>
+                          <img src='images/display.png' alt='feedback icon' />
                         </div>
-                        <div className='top-second-component-first-second-first-second'>
-                          Give Feedback
-                        </div>
-
+                        <div className='menu-text'>Give Feedback</div>
                       </div>
-
-
                     </div>
-                    <div className='top-second-component-first-second'>
-                      <div className='top-second-component-first-second-first'>
-                        <div className='top-second-component-first-second-first-first'>
-                          <img src='images/logout.png' alt='profile picture' />
 
+                    <div className='profile-menu-item'>
+                      <div className='menu-icon-text'>
+                        <div className='menu-icon'>
+                          <img src='images/logout.png' alt='logout icon' />
                         </div>
-                        <div className='top-second-component-first-second-first-second'>
-                          Logout
-                        </div>
-
+                        <div className='menu-text'>Logout</div>
                       </div>
-
-
                     </div>
                   </div>
-
-
                 </div>
+
               </div>
             )}
           </div>
@@ -192,206 +162,212 @@ function Linkdink() {
 
         </div>
       </div>
-      <div className='value-second-component'>
-        <div className='value-second-component-first'>
-          <div className='value-second-component-first-first'>
-            <div className='value-second-component-first-first-first'>
+      <div className='linkedin-layout'>
+        <div className='linkedin-profile-section'>
+          <div className='linkedin-cover-container'>
+            <div className='linkedin-cover-img'>
               <img src='./images/cover-pic.png' alt='profile' />
             </div>
-            <div className='value-second-component-first-first-second'>
-              <div className='top'>
+            <div className='linkedin-cover-content'>
+              <div className='linkedin-profile-pic-wrapper'>
                 <img src='./images/user-1.png' alt='profile' />
-
               </div>
-              <div className='value-second-component-first-first-second-first'>
-                <div className='value-second-component-first-first-second-first-first'>
-                  <div className='value-second-component-first-first-second-first-first'>
-                    Rayan Walton
+              <div className='linkedin-info-container'>
+                <div className='linkedin-info-header'>
+                  <div className='linkedin-info-header-left'>
+                    <div className='linkedin-info-name'>Rayan Walton</div>
+                    <div className='linkedin-info-title'>Web Developer at Microsoft</div>
                   </div>
-                  <div className='value-second-component-first-first-second-first-second'>
-                    Web Developer at Microsoft
-                  </div>
-
-                </div>
-                <div className='value-second-component-first-first-second-first-second'>
-                  <div className='value-second-component-first-first-second-first-second-first'>
-                    <div> Your profile views</div>
-                    <div> 52</div>
-                  </div>
-                  <div className='value-second-component-first-first-second-first-second-second'>
-                    <div>
-                      Your post views
+                  <div className='linkedin-stats'>
+                    <div className='linkedin-stat-row'>
+                      <div>Your profile views</div>
+                      <div>52</div>
                     </div>
-                    <div>810</div>
+                    <div className='linkedin-stat-row'>
+                      <div>Your post views</div>
+                      <div>810</div>
+                    </div>
+                    <div className='linkedin-stat-row-border'>
+                      <div>Your connections</div>
+                      <div>205</div>
+                    </div>
                   </div>
-                  <div className='value-second-component-first-first-second-first-second-third'>
+                  <div className='linkedin-links'>
+                    <div className='linkedin-links-left'>
+                      <div className='linkedin-links-left-img'>
+                        <img src='./images/items.png' alt='profile' />
+                      </div>
+                      <div>My items</div>
+                    </div>
+                    <div className='linkedin-links-right'>
+                      <div className='linkedin-links-right-img'>
+                        <img src='./images/premium.png' alt='profile' />
+                      </div>
+                      <div>Try Premium</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='linkedin-side-panel'>
+            <div className='linkedin-side-panel-section'>
+              <div className='linkedin-side-panel-heading'>RECENT</div>
+              {["Web Development", "User Interface", "Online Learning", "Learn Online", "Code Better", "Group Learning"].map((item, idx) => (
+                <div className='linkedin-side-panel-item' key={idx}>
+                  <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
+                  <div>{item}</div>
+                </div>
+              ))}
+            </div>
+            <div className='linkedin-side-panel-section'>
+              <div className='linkedin-side-panel-heading'>GROUPS</div>
+              {["Web Design Group", "HTML & CSS Learners", "Python & JavaScript Group", "Learn Coding Online"].map((group, idx) => (
+                <div className='linkedin-side-panel-item' key={idx}>
+                  <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/group.png' alt='profile' /></div>
+                  <div>{group}</div>
+                </div>
+              ))}
+            </div>
+            <div className='linkedin-side-panel-section'>
+              <div className='linkedin-side-panel-heading'>
+                <a href="https://github.com/engineermuhammadsaad688/news-site-front-end/tree/saad-two/public/linkedink-images">HASHTAG</a>
+              </div>
+              {["webdevelopment", "userinterface", "onlinelearning"].map((tag, idx) => (
+                <div className='linkedin-side-panel-item' key={idx}>
+                  <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/hashtag.png' alt='profile' /></div>
+                  <div>{tag}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className='linkedin-post-section'>
+          <div className='linkedin-post-box'>
+            <div className='linkedin-post-header'>
+              <div className='linkedin-post-header-img'>
+                <img src='./images/user-1.png' alt='profile' />
+              </div>
+              <div className='linkedin-post-header-input'>
+                <input type='text' placeholder='Write a post' className='custom-input' />
+              </div>
+            </div>
+            <div className='linkedin-post-actions'>
+              {[['photo.png', 'Photo'], ['video.png', 'Video'], ['Event.png', 'Event']].map(([img, label], idx) => (
+                <div className='linkedin-post-action' key={idx}>
+                  <div className='linkedin-post-action-icon'><img src={`./images/${img}`} alt='profile' /></div>
+                  <div>{label}</div>
+                </div>
+              ))}
+              <div className='linkedin-post-button'>Post</div>
+            </div>
+          </div>
+          <div className='linkedin-post-feed'>
+            <div className='linkedin-post-content'>
+              <div className='linkedin-post-user'>
+                <div className='post-card'>
+                  <div className='post-card-left'>
+                    <img src='./images/user-1.png' alt='profile' />
+                  </div>
+                  <div className='post-card-right'>
+                    <div className='post-card-section'>
+                      Benjamin Leo
+                    </div>
+                    <div className='post-card-topics'>
+                      Founder and CEO at Gellelio Group | Angel Investor
+                    </div>
                     <div >
-                      Your connections
+                      2 hours ago</div>
+                  </div>
+                </div>
+              </div>
+              <div className='inkedin-post-text'>
+
+                The success of every websites depends on search engine optimisation and digital marketing strategy<br /> If you are on first page of all major search engines then you are ahead among your competitors.
+              </div>
+              <div className='linkedin-post-text'>
+                <img src='./images/post-image-1.png' alt='profile' />
+              </div>
+
+              <div className='linkedin-post-footer'>
+                <div className='post-footer-wrapper'>
+                  <div className='footer-divider-left'>
+                    <div className='footer-like'>
+                      <img src='./images/like.png' alt='profile' />
                     </div>
-                    <div>205</div>
-                  </div>
-                </div>
-                <div className='value-second-component-first-first-second-first-third'>
-                  <div className='value-second-component-first-first-second-first-third-first'>
-                    <div className='value-second-component-first-first-second-first-third-first-first'>
-                      <img src='./images/items.png' alt='profile' />
-
+                    <div className='footer-love'>
+                      <img src='./images/love.png' alt='profile' />
                     </div>
-                    <div>
-                      My items
-
+                    <div className='footer-clap'>
+                      <img src='./images/clap.png' alt='profile' />
                     </div>
                   </div>
-                  <div className='value-second-component-first-first-second-first-third-second'>
-                    <div className='value-second-component-first-first-second-first-third-second-first'>
-                      <img src='./images/premium.png' alt='profile' />
+                  <div className='footer-divider-right'>
+                    Abhinav Mishra and 75 others
+                  </div>
+                </div>
+                <div className='post-footer-actions'>
+                  <div>22 comments : 40   shares</div>
+
+                </div>
+
+              </div>
+              <div className='post-extra-container'>
+                <div className='post-extra-left'>
+                  <div className='post-extra-picture'>
+                    <img src='./images/user-1.png' alt='profile' />
+
+                  </div>
+                  <div className='post-extra-down-arrow'>
+                    <img src='./images/down-arrow.png' alt='profile' />
+
+                  </div>
+                </div>
+                <div className='post-extra-right'>
+                  <div className='post-extra-views'>
+                    <div className='post-extra-views-top'>
+                      <div className='post-top-views'>
+                        <img src='./images/like.png' alt='profile' />
+                      </div>
+                      <div className='post-extra-like'>
+                        Like
+                      </div>
                     </div>
-                    <div>
-                      Try Premium
+                    <div className='post-extra-views-value'>
+                      <div className='post-option'>
+                        <img src='./images/Comment.png' alt='profile' />
+
+                      </div>
+                      <div className='post-extra-comment'>
+                        Comment
+                      </div>
+                    </div>
+                    <div className='post-extra-views-topic'>
+                      <div className=' post-extra-views-topic-left'>
+                        <img src='./images/Share.png' alt='profile' />
+
+                      </div>
+                      <div className='post-extra-share'>
+                        Share
+                      </div>
+                    </div>
+                    <div className='post-extra-views-level'>
+                      <div className='post-extra-views-level-left'>
+                        <img src='./images/Send.png' alt='profile' />
+                      </div>
+                      <div className='post-extra-send'>
+                        Send
+                      </div>
                     </div>
                   </div>
-                </div>
-
-
-
-
-              </div>
-            </div>
-          </div>
-          <div className='value-second-component-first-second'>
-            <div className='value-second-component-first-second-first'>
-              <div className='value-second-component-first-second-first-first'>
-                RECENT
-
-              </div>
-              <div className='value-second-component-first-second-first-second'>
-                <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
-                <div
-                >Web Development
-                </div>
-
-              </div>
-              <div className='value-second-component-first-second-first-second'>
-                <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
-                <div
-                >User Interface
-                </div>
-
-              </div>
-              <div className='value-second-component-first-second-first-second'>
-                <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
-                <div
-                >Online Learning
-                </div>
-
-              </div>
-              <div className='value-second-component-first-second-first-second'>
-                <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
-                <div
-                >Learn Online
-                </div>
-
-              </div>
-              <div className='value-second-component-first-second-first-second'>
-                <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
-                <div
-                >Code Better
-                </div>
-
-              </div>
-              <div className='value-second-component-first-second-first-second'>
-                <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/recent.png' alt='profile' /></div>
-                <div
-                >Group Learning
-                </div>
-
-              </div>
-            </div>
-            <div className='value-second-component-first-second-second'>
-              <div className='value-second-component-first-second-first'>
-                <div className='value-second-component-first-second-first-first'>
-                  GROUPS
-
-
-                </div>
-                <div className='value-second-component-first-second-first-second'>
-                  <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/group.png' alt='profile' /></div>
-                  <div
-                  >Web Design Group
-                  </div>
-
-                </div>
-                <div className='value-second-component-first-second-first-second'>
-                  <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/group.png' alt='profile' /></div>
-                  <div
-                  >HTML & CSS Learners
-
-                  </div>
-
-                </div>
-                <div className='value-second-component-first-second-first-second'>
-                  <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/group.png' alt='profile' /></div>
-                  <div
-                  >Python & JavaScript Group
-                  </div>
-
-                </div>
-                <div className='value-second-component-first-second-first-second'>
-                  <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/group.png' alt='profile' /></div>
-                  <div
-                  >Learn Coding Online
-
-
-                  </div>
-
-                </div>
-              </div>
-            </div>
-            <div className='value-second-component-first-second-third'>
-              <div className='value-second-component-first-second-second'>
-                <div className='value-second-component-first-second-first'>
-                  <div className='value-second-component-first-second-first-first'>
-                    <a href="https://github.com/engineermuhammadsaad688/news-site-front-end/tree/saad-two/public/linkedink-images">HASHTAG</a>
-
-                  </div>
-                  <div className='value-second-component-first-second-first-second'>
-                    <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/hashtag.png' alt='profile' /></div>
-                    <div
-                    >webdevelopment
-
-                    </div>
-
-                  </div>
-                  <div className='value-second-component-first-second-first-second'>
-                    <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/hashtag.png' alt='profile' /></div>
-                    <div
-                    >userinterface
-
-
-                    </div>
-
-                  </div>
-                  <div className='value-second-component-first-second-first-second'>
-                    <div style={{ display: 'flex', alignItems: 'center' }}><img src='./images/hashtag.png' alt='profile' /></div>
-                    <div
-                    >onlinelearning
-                    </div>
-
-                  </div>
-
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-        <div className='value-second-component-second'>
-          jweiiueiw
-        </div>
-        <div className='value-second-component-third'>
-          jweiiueiw
-        </div>
+        <div className='linkedin-sidebar'>jweiiueiw</div>
       </div>
+
 
     </>
   );
