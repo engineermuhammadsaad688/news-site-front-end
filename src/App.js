@@ -9,6 +9,7 @@ import CalculatorPage from './Pages/calculatorPage';
 import CalculatorMain from './components/calculatorMain/calculatorMain';
 import AirbanbCloneProject from './components/airHome/airbanbCloneProject';
 import Linkdink from './components/test/linkdink';
+import Linkdink1 from './components/test/linkdink1';
 
 
 function App() {
@@ -51,6 +52,8 @@ function App() {
 
 
           <Route path="/" element={< Linkdink />} />
+          <Route path="main" element={< Linkdink1 />} />
+
 
 
 
@@ -63,7 +66,7 @@ function App() {
         </Routes>
       </Router>
 
-   
+
 
 
     </>

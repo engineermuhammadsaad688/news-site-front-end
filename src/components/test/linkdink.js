@@ -15,7 +15,7 @@ function Linkdink() {
 
 
   return (
-    <>
+   <div className='main-container-top'> 
       <div className="layout-wrapper">
         <div className="layout-header">
           <div className="header-left-section">
@@ -113,7 +113,7 @@ function Linkdink() {
                         <div className='menu-icon'>
                           <img src='images/feedback.png' alt='settings icon' />
                         </div>
-                        <div className='menu-text'>Settings & Privacy</div>
+                        <div className='menu-text'> Give Feedback</div>
                       </div>
                     </div>
 
@@ -122,7 +122,7 @@ function Linkdink() {
                         <div className='menu-icon'>
                           <img src='images/setting.png' alt='help icon' />
                         </div>
-                        <div className='menu-text'>Help & Support</div>
+                        <div className='menu-text'>  Settings & Privacy</div>
                       </div>
                     </div>
 
@@ -131,7 +131,7 @@ function Linkdink() {
                         <div className='menu-icon'>
                           <img src='images/help.png' alt='display icon' />
                         </div>
-                        <div className='menu-text'>Display & Accessibility</div>
+                        <div className='menu-text'>Help & Support  </div>
                       </div>
                     </div>
 
@@ -140,7 +140,7 @@ function Linkdink() {
                         <div className='menu-icon'>
                           <img src='images/display.png' alt='feedback icon' />
                         </div>
-                        <div className='menu-text'>Give Feedback</div>
+                        <div className='menu-text'>Display & Accessibility</div>
                       </div>
                     </div>
 
@@ -203,7 +203,8 @@ function Linkdink() {
                       <div className='linkedin-links-right-img'>
                         <img src='./images/premium.png' alt='profile' />
                       </div>
-                      <div>Try Premium</div>
+                      <div style={{ width: '100%' }}
+                      >Try Premium</div>
                     </div>
                   </div>
                 </div>
@@ -568,7 +569,7 @@ function Linkdink() {
               </div>
             </div>
           </div>
-                    <div className='linkedin-post-feed'>
+          <div className='linkedin-post-feed'>
             <div className='linkedin-post-content'>
               <div className='linkedin-post-user'>
                 <div className='post-card'>
@@ -671,11 +672,102 @@ function Linkdink() {
             </div>
           </div>
         </div>
-        <div className='linkedin-sidebar'>jweiiueiw</div>
+        <div className='linkedin-sidebar'>
+          <div className='sidebar-container'>
+            <div className="sidebar-profile-title" style={{ display: 'flex', gap: '10px', flexDirection: 'column', paddingLeft: '20px', paddingRight: '20px' }}>
+              <div className='Profile-section' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'Center' }}>
+                <div className='sidebar-section-top'>
+                  Trending News
+                </div>
+                <div className='sidebar-Content'>
+                  <img src='./images/more.png' alt='picture' />
+                </div>
+              </div>
+              <div className='Profile-headline'>
+                <div className='profile-value-headline'>
+                  <div className='porfile-post-text' style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div className='porfile-tile-option' style={{ fontWeight: '500', fontSize: '15px' }}>
+                      High demand for skilled manpower
+                    </div>
+                    <div className='porfile-tile-value'>
+                      1d ago 10,834 readers
+                    </div>
+                  </div>
+                  <div className='porfile-post-text' style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div className='porfile-tile-option' style={{ fontWeight: '500', fontSize: '15px' }}>
+                      Careers growing horizontally too
+                    </div>
+                    <div className='porfile-tile-value'>
+                      19h ago 1,552 readers
+                    </div>
+                  </div>
+                  <div className='porfile-post-text' style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div className='porfile-tile-option' style={{ fontWeight: '500', fontSize: '15px' }}>
+                      Less work visa for US, more for UK
+                    </div>
+                    <div className='porfile-tile-value'>
+                      1d ago 27,280 readers
+                    </div>
+                  </div>
+                  <div className='porfile-post-text' style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div className='porfile-tile-option' style={{ fontWeight: '500', fontSize: '15px' }}>
+                      More hiring = higher confidence?
+                    </div>
+                    <div className='porfile-tile-value'>
+                      18h ago 8,208 readers
+                    </div>
+                  </div>
+                  <div className='porfile-post-text' style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div className='porfile-tile-option' style={{ fontWeight: '500', fontSize: '15px' }}>
+                      Gautam Adani is the world's third richest
+                    </div>
+                    <div className='porfile-tile-value'>
+                      12h ago 4,205 readers
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='sidebar-footer'>
+                Read More
+              </div>
+            </div>
+          </div>
+          <div className='sidebar-profile'>
+            <div className='sidebar-profile-first'>
+              <div className='sidebar-profile-first-first'>
+                Ad...
+              </div>
+              <div className='sidebar-profile-first-second'>
+                Master the 5 principles of web design
+
+              </div>
+              <div className='sidebar-profile-first-third'>
+                <div className='sidebar-profile-first-third-first'>
+                  <img src='./images/user-1.png' alt='picture' />
+
+                </div>
+                <div className='sidebar-profile-first-third-second'>
+                  <img src='./images/mi-logo.png' alt='picture' />
+
+                </div>
+              </div>
+              <div className='sidebar-profile-first-fourth'>
+                <div>Brand and Demand in Xiaomi</div>
+                <div className='sidebar-profile-first-fourth-first'>
+                  Learn More
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div className='linkedin-profile-end'>
+            <div>About Accessibility Help Center</div>
+            <div>Privacy Policy Advertising set the app</div>
+          </div>
+        </div>
       </div>
+      </div> 
 
-
-    </>
   );
 }
 
