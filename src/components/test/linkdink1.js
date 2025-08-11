@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './linkdink1.css'
 import React, { useState } from 'react';
 
@@ -12,12 +13,11 @@ function Linkdink1() {
   };
   return (
     <div className='value-main-container'>
-
       <div className="layout-wrapper">
         <div className="layout-header">
           <div className="header-left-section">
             <div className="logo-box">
-              <img src="images/logo.png" alt="profile picture" />
+              <a href="/" class="active-link"><img src="images/logo.png"/> <span></span></a>
             </div>
 
             <div className="search-wrapper">
@@ -99,8 +99,10 @@ function Linkdink1() {
                       </div>
                       <div className='profile-info'>
                         <div className='profile-name'>Rayan Walton</div>
-                        <div className='profile-link'>See your profile</div>
-                      </div>
+                        <Link to="/" className="profile-link">
+                          See your profile
+                        </Link>
+                        </div>
                     </div>
 
                     <div className='profile-menu-item'>
@@ -153,9 +155,6 @@ function Linkdink1() {
               </div>
             )}
           </div>
-
-
-
         </div>
       </div>
       <div className='layout-container'>
@@ -377,11 +376,9 @@ function Linkdink1() {
               </div>
             </div>
           </div>
-
-          <div style={{ display: 'flex', justifyContent: 'Center', alignItems: 'Center', width: '158%' }}>
+          <div>
             About Accessibility Help Center Privacy Policy Advertising Get the App More
           </div>
-
           <div className='footer-section'>
             <div className='footer-item'>
               <img src='./images/logo.png' alt='profile' />
@@ -390,15 +387,101 @@ function Linkdink1() {
               LinkedIn © 2022. All rights reserved
             </div>
           </div>
-
-
         </div>
         <div className='layout-right'>
-          <div className='layout-right-one'>
+          <div className='sidebar-profile'>
+            <div className='sidebar-profile-first'>
+              <div className='sidebar-profile-first-first'>
+                Ad...
+              </div>
+              <div className='sidebar-profile-first-second'>
+                Master the 5 principles of web design
+
+              </div>
+              <div className='sidebar-profile-first-third'>
+                <div className='sidebar-profile-first-third-first'>
+                  <img src='./images/user-1.png' alt='picture' />
+
+                </div>
+                <div className='sidebar-profile-first-third-second'>
+                  <img src='./images/mi-logo.png' alt='picture' />
+
+                </div>
+              </div>
+              <div className='sidebar-profile-first-fourth'>
+                <div>Brand and Demand in Xiaomi</div>
+                <div className='sidebar-profile-first-fourth-first'>
+                  Learn More
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div className='people-suggestions-container'>
+            <div className='people-suggestions-wrapper'>
+              <div className='people-suggestions-header'>
+                People you may know
+              </div>
+              <div className='people-suggestions-body'>
+                <div className='people-list'>
+                  <div className='person-item'>
+                    <div className='person-avatar'>
+                      <img src='./images/user-3.png' alt='picture' />
+                    </div>
+                    <div className='person-info'>
+                      <div style={{ fontWeight: 600 }}>Samuel Tony</div>
+                      <div style={{ fontWeight: 600 }}>Head of Marketing at Alibaba</div>
+                      <div className='connect-button'>Connect</div>
+                    </div>
+                  </div>
+                  <div className='person-item'>
+                    <div className='person-avatar'>
+                      <img src='./images/user-4.png' alt='picture' />
+                    </div>
+                    <div className='person-info'>
+                      <div style={{ fontWeight: 600 }}>Benjamin Leo</div>
+                      <div style={{ fontWeight: 600 }}>Head of Marketing at Alibaba</div>
+                      <div className='connect-button'>Connect</div>
+                    </div>
+                  </div>
+                  <div className='person-item'>
+                    <div className='person-avatar'>
+                      <img src='./images/user-5.png' alt='picture' />
+                    </div>
+                    <div className='person-info'>
+                      <div style={{ fontWeight: 600 }}>Steave Greg</div>
+                      <div style={{ fontWeight: 600 }}>Head of Marketing at Alibaba</div>
+                      <div className='connect-button'>Connect</div>
+                    </div>
+                  </div>
+                  <div className='person-item'>
+                    <div className='person-avatar'>
+                      <img src='./images/user-2.png' alt='picture' />
+                    </div>
+                    <div className='person-info'>
+                      <div style={{ fontWeight: 600 }}>Martin Lewis</div>
+                      <div style={{ fontWeight: 600 }}>Head of Marketing at Alibaba</div>
+                      <div className='connect-button'>Connect</div>
+                    </div>
+                  </div>
+                  <div className='person-item'>
+                    <div className='person-avatar'>
+                      <img src='./images/user-1.png' alt='picture' />
+                    </div>
+                    <div className='person-info'>
+                      <div style={{ fontWeight: 600 }}>Clarence George</div>
+                      <div style={{ fontWeight: 600 }}>Head of Marketing at Alibaba</div>
+                      <div className='connect-button'>Connect</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
 
         </div>
-
-      </div>
       </div>
     </div>
   );

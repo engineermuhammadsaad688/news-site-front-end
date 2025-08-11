@@ -184,7 +184,14 @@
 
 .profile-link {
   color: #fff;
+  text-decoration: none; 
 }
+
+.profile-link:hover {
+  text-decoration: none; 
+  color: #fff; 
+}
+
 
 .profile-menu-item {
   display: flex;
