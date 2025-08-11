@@ -1,6 +1,8 @@
 import './linkdink1.css'
 import React, { useState } from 'react';
 
+
+
 function Linkdink1() {
   const [activeItem, setActiveItem] = useState(['']);
   const [showSmallImage, setShowSmallImage] = useState(false);
@@ -234,24 +236,170 @@ function Linkdink1() {
               </div>
             </div>
           </div>
-          <div className='custom-wrapper'>
-            <div className='custom-wrapper-section'>
-              <div className='custom-wrapper-section-part1'>
-
+          <div className='exp-wrapper'>
+            <div className='exp-wrapper-section'>
+              <div className='exp-section-title'>
+                Experience
               </div>
-              <div className='custom-wrapper-section-part2'>
-
+              <div className='exp-section-content'>
+                <div className='exp-item-wrapper'>
+                  <div className='exp-item-left'>
+                    <img src='./images/microsoft.png' alt='picture' />
+                  </div>
+                  <div className='exp-item-right'>
+                    <div style={{ fontWeight: 600, fontSize: 20 }}>Lead Front-End Developer</div>
+                    <div>Microsoft - Full-time</div>
+                    <div>Feb 2021 - Present - 1.5 years</div>
+                  </div>
+                </div>
+                <div style={{ paddingTop: 10, paddingLeft: 114, borderBottom: '1px solid', paddingBottom: 10, marginBottom: 20 }}>
+                  Computer programming is the process of performing a particular computation,
+                  usually by designing and building an executable computer program.
+                </div>
+                <div className='exp-item-wrapper'>
+                  <div className='exp-item-left'>
+                    <img src='./images/slack.png' alt='picture' />
+                  </div>
+                  <div className='exp-item-right'>
+                    <div style={{ fontWeight: 600, fontSize: 20 }}>Full Stack Developer</div>
+                    <div>Slack - Full-time</div>
+                    <div>June 2018 - Jan 2021 - 2.6 years</div>
+                  </div>
+                </div>
+                <div style={{ paddingTop: 10, paddingLeft: 114, borderBottom: '1px solid', paddingBottom: 10, marginBottom: 20 }}>
+                  Computer programming is the process of performing a particular computation,
+                  usually by designing and building an executable computer program.
+                </div>
+                <div className='exp-item-wrapper'>
+                  <div className='exp-item-left'>
+                    <img src='./images/google.png' alt='picture' />
+                  </div>
+                  <div className='exp-item-right'>
+                    <div style={{ fontWeight: 600, fontSize: 20 }}>Web Developer</div>
+                    <div>Google Inc - Full-time</div>
+                    <div>Sept 2015 - May 2018 - 2.8 years</div>
+                  </div>
+                </div>
+                <div style={{ paddingTop: 10, paddingLeft: 114, borderBottom: '1px solid', paddingBottom: 10, marginBottom: 20 }}>
+                  Computer programming is the process of performing a particular computation,
+                  usually by designing and building an executable computer program.
+                </div>
               </div>
+              <div style={{ display: 'flex', alignItems: 'Center', justifyContent: 'Center' }}>
+                Show all 7 experiences
+                <img src="images/right-arrow.png" alt="profile picture"
+                  style={{
+                    alignItems: 'Center',
+                    marginTop: 7,
+                    marginLeft: 13,
+                    display: 'flex'
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+          <div className='edu-container'>
+            <div className='edu-main-container'>
+              <div className='edu-header'>
+                Education
+              </div>
+              <div className='edu-list'>
+                <div className='edu-item'>
+                  <div className='edu-logo'>
+                    <img src='./images/stanford.png' alt='picture' />
+                  </div>
+                  <div className='edu-details'>
+                    <div style={{ fontWeight: 600, fontSize: 20 }}>Stanford University</div>
+                    <div>BSEE, Electrical Engineering</div>
+                    <div>2018 - 2022</div>
+                  </div>
+                </div>
+                <div style={{ paddingTop: 10, paddingLeft: 114, borderBottom: '1px solid', paddingBottom: 10, marginBottom: 20 }}></div>
+
+                <div className='edu-item'>
+                  <div className='edu-logo'>
+                    <img src='./images/north.png' alt='picture' />
+                  </div>
+                  <div className='edu-details'>
+                    <div style={{ fontWeight: 600, fontSize: 20 }}>Northwestern University</div>
+                    <div>Computer Science</div>
+                    <div>2015 - 2018</div>
+                  </div>
+                </div>
+                <div style={{ paddingTop: 10, paddingLeft: 114, borderBottom: '1px solid', paddingBottom: 10, marginBottom: 20 }}></div>
+
+                <div className='edu-item'>
+                  <div className='edu-logo'>
+                    <img src='./images/mit.png' alt='picture' />
+                  </div>
+                  <div className='edu-details'>
+                    <div style={{ fontWeight: 600, fontSize: 20 }}>Harvard University</div>
+                    <div>Senior High School</div>
+                    <div>2005 - 2015</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='skills-section'>
+            <div className='skills-container'>
+              <div className='skills-wrapper'>
+                <div className='skills-header'>
+                  <h2>Skills</h2>
+                </div>
+                <div className='skills-content'>
+                  <div className='skills-list-left'>
+                    <div className='skill-item'>Leadership</div>
+                    <div className='skill-item'>WebDesign</div>
+                    <div className='skill-item'>Development</div>
+                    <div className='skill-item'>Communication</div>
+                    <div className='skill-item'>UI/UX</div>
+                    <div className='skill-item'>Planning</div>
+                    <div className='skill-item'>Coding</div>
+                  </div>
+                  <div className='skills-list-right'>
+                    <div className='skill-item'>JavaScript</div>
+                    <div className='skill-item'>Python</div>
+                    <div className='skill-item'>Entrepreneurship</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='languages-section'>
+            <div className='languages-container'>
+              <div className='languages-title'>
+                Languages
+              </div>
+              <div className='languages-buttons'>
+                <button className="language-btn">English</button>
+                <button className="language-btn">German</button>
+              </div>
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', justifyContent: 'Center', alignItems: 'Center', width: '158%' }}>
+            About Accessibility Help Center Privacy Policy Advertising Get the App More
+          </div>
+
+          <div className='footer-section'>
+            <div className='footer-item'>
+              <img src='./images/logo.png' alt='profile' />
+            </div>
+            <div className='footer-item'>
+              LinkedIn © 2022. All rights reserved
             </div>
           </div>
 
 
         </div>
         <div className='layout-right'>
-          hsdhj
-        </div>
-      </div>
+          <div className='layout-right-one'>
 
+        </div>
+
+      </div>
+      </div>
     </div>
   );
 }
