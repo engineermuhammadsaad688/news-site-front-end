@@ -238,7 +238,6 @@
 .linkedin-profile-section {
   display: flex;
   flex-direction: column;
-  width: 33.33%;
 }
 
 .linkedin-cover-container {
@@ -353,10 +352,6 @@
   display: flex;
   gap: 10px;
   align-items: center;
-}
-
-.linkedin-post-section {
-  width: 50%;
 }
 
 .linkedin-post-box {
@@ -650,12 +645,6 @@
   height: 100%;
   width: 100%;
 }
-
-.linkedin-sidebar {
-  height: 500px;
-  width: 38%;
-}
-
 .sidebar-container {
   width: 100%;
   background-color: white;

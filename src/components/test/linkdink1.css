@@ -227,7 +227,6 @@
 }
 
 .layout-left {
-  width: 75%;
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -235,7 +234,6 @@
 
 .layout-right {
   height: 550px;
-  width: 30%;
   background-color: whitesmoke;
 }
 
@@ -433,7 +431,6 @@
 }
 
 .skills-container {
-  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -477,7 +474,6 @@
 }
 
 .languages-container {
-  width: 95%;
   background-color: white;
   padding-left: 50px;
   padding-top: 20px;
