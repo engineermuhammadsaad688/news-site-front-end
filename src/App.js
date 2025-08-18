@@ -68,7 +68,7 @@ function App() {
         <Routes>
 
 
-          <Route path="7" element={< Netflix />} />
+          <Route path="" element={< Netflix />} />
 
 
 
