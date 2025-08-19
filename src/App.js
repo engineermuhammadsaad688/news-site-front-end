@@ -2,6 +2,7 @@ import './App.css';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'font-awesome/css/font-awesome.min.css';
+import Portfolio from './components/Portfolio.js/portfolio';
 
 // import AirHome from './Pages/AirHome';
 // import AA from './components/airHome/a';
@@ -56,7 +57,11 @@ function App() {
         </Routes>
       </Router> */}
 
-
+      <Router>
+        <Routes>
+          <Route path="" element={< Portfolio />} />
+        </Routes>
+      </Router> 
     </>
   );
 }
