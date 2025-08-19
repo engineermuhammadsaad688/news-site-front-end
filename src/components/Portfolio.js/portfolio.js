@@ -23,11 +23,11 @@ function Portfolio() {
                     <nav>
                         <img src='./images/logo.png ' className='logo' />
                         <ul>
-                            <li> <Link to="/portfolio" className='nav-item'>Home</Link></li>
-                            <li> <Link to="/portfolio" className='nav-item'>About</Link></li>
-                            <li> <Link to="/portfolio" className='nav-item'>Services</Link></li>
-                            <li> <Link to="/portfolio" className='nav-item'>Portfolio</Link></li>
-                            <li> <Link to="/portfolio" className='nav-item'>Contact</Link></li>
+                            <li> <Link to="/#" className='nav-item'>Home</Link></li>
+                            <li> <Link to="/#" className='nav-item'>About</Link></li>
+                            <li> <Link to="/#" className='nav-item'>Services</Link></li>
+                            <li> <Link to="/#" className='nav-item'>Portfolio</Link></li>
+                            <li> <Link to="/#" className='nav-item'>Contact</Link></li>
                        </ul>
                     </nav>
                     <div className='header-text'>
