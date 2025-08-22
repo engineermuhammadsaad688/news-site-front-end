@@ -1,0 +1,499 @@
+.header-container {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    padding: 0 31px;
+    box-sizing: border-box;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-banner {
+    background-image: url('../../backgroundImages/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 641px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-logo-container {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.header-navigation {
+    display: contents;
+}
+
+.nav-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav-item:hover {
+    background-color: darkblue;
+}
+
+.header-register {
+    border-radius: 20px;
+    padding: 8px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header-register:hover {
+    background-color: red;
+}
+
+.search-section {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search-heading {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-fields {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.field-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: black;
+}
+
+.field-placeholder {
+    font-size: 12px;
+    color: gray;
+}
+
+.search-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #932f2f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+/* Exclusives */
+.exclusive-container {
+    background-color: whitesmoke;
+}
+
+.exclusive-content {
+    padding-top: 10px;
+}
+
+.exclusive-heading {
+    padding: 20px 0 20px 32px;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.exclusive-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.exclusive-item {
+    height: 131px;
+    width: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Individual City Background Images */
+.london {
+    background-image: url('../../backgroundImages/image-1.png');
+}
+
+.switzerland {
+    background-image: url('../../backgroundImages/image-2.png');
+}
+
+.australia {
+    background-image: url('../../backgroundImages/image-3.png');
+}
+
+.france {
+    background-image: url('../../backgroundImages/image-4.png');
+}
+
+.amsterdam {
+    background-image: url('../../backgroundImages/image-5.png');
+}
+
+.netherlands {
+    background-image: url('../../backgroundImages/image-6.png');
+}
+
+.newyork {
+    background-image: url('../../backgroundImages/image-7.png');
+}
+
+.chicago {
+    background-image: url('../../backgroundImages/image-8.png');
+}
+
+.sanfrancisco {
+    background-image: url('../../backgroundImages/image-9.png');
+}
+
+.shanghai {
+    background-image: url('../../backgroundImages/image-10.png');
+}
+
+.gallery-section {
+    background-color: whitesmoke;
+}
+
+.gallery-container {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.gallery-heading {
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.gallery-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery-column-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-column-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-image-large img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-image-top-right img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-image-bottom-left img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-image-bottom-right img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-title-large {
+    font-weight: 500;
+}
+
+.gallery-title-top-right {
+    font-weight: 500;
+}
+
+.gallery-title-bottom-left {
+    font-weight: 500;
+}
+
+.gallery-title-bottom-right {
+    font-weight: 500;
+}
+
+
+.banner-section {
+
+    background-color: whitesmoke;
+
+}
+
+.banner-container {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 20px;
+}
+
+.banner-card {
+    background-image: url('../../backgroundImages/banner-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 370px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+}
+
+.banner-heading {
+    font-weight: 500;
+    color: white;
+    font-size: 30px;
+}
+
+.banner-subtext {
+    font-weight: 500;
+    color: white;
+}
+
+.banner-button {
+    background-color: #FF6B6B;
+    width: 20%;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner-button:hover {
+    background-color: #00008b;
+    transform: scale(1.100);
+}
+
+.travel-stories-section {
+    background-color: whitesmoke;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.travel-stories-heading {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.travel-stories-cards {
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+    color: white;
+    margin-top: 17px;
+}
+
+.travel-story-card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 370px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.europe-story {
+    background-image: url('../../backgroundImages/story-1.png');
+}
+
+.world-tour-story {
+    background-image: url('../../backgroundImages/story-2.png');
+}
+
+.thailand-story {
+    background-image: url('../../backgroundImages/story-3.png');
+}
+
+.centered-button-wrapper {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded-action-button {
+    background-color: #FF6B6B;
+    width: 23%;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.rounded-action-button:hover {
+    background-color: #00008b;
+}
+
+.about-section {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.about-heading {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.about-description {
+    padding-top: 30px;
+    color: #333333;
+}
+
+.footer-container {
+    background-color: #00008b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #00BFFF;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+
+
+
+.container-class {
+    color: #555;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}

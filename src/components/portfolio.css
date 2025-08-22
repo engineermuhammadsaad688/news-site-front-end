@@ -1,0 +1,144 @@
+.header {
+    background-image: url('../../backgroundImages/background.png');
+    background-position: center;
+    background-color: #ff004f;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 10px 5%;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 140px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+}
+
+
+.button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #ff004f;
+    transition: all 0.5s ease;
+
+}
+
+
+.button:hover::after {
+    width: 100%;
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+.title {
+    color: #fff;
+    padding: 87px 10%;
+
+}
+
+.title span {
+    color: #ff004f;
+}
+
+.about {
+    color: #ababab;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+
+}
+
+.about-col-1 img {
+    width: 93%;
+    border-radius: 15px;
+
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    margin-top: -40px;
+
+}
+.sub-tile{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    gap: 15%;
+    align-items: center;
+
+}
+.tab-1-link {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+}
+
+
+.tab-1-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #ff004f;
+    transition: all 0.5s ease;
+
+}
+
+
+.tab-1-link:hover::after {
+    width: 100%;
+}
+.tab-contents {
+  display: none; /* by default sab hidden */
+}
+
+.tab-contents.active-tab {
+  display: block; /* sirf active-tab dikhaye */
+}
