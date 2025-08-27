@@ -1,236 +1,278 @@
 .header {
     background-image: url('../../backgroundImages/background.png');
     background-position: center;
+    background-color: #ff004f;
     background-size: cover;
     height: 100vh;
     width: 100%;
+    padding: 10px 5%;
+    box-sizing: border-box;
 }
 
-.container {
-    padding: 10px 10%;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.logo {
+.logo img {
     width: 140px;
 }
 
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
+.button {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
     position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
 }
 
-nav ul li a::after {
+
+.button::after {
     content: "";
-    width: 0;
-    height: 3px;
-    background: #ff004f;
     position: absolute;
     left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+    bottom: -5px;
+    width: 0%;
+    height: 5px;
+    background-color: #ff004f;
+    transition: all 0.5s ease;
+
 }
 
-nav ul li a:hover::after {
+
+.button:hover::after {
     width: 100%;
 }
 
-.header-text {
+.button-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+.title {
     color: #fff;
-    margin-top: 15%;
-    font-size: 30px;
+    padding: 87px 10%;
+
 }
 
-.header-text h1 {
-    font-size: 60px;
-    margin-top: 20px;
-}
-
-.header-text h1 span {
+.title span {
     color: #ff004f;
 }
 
-
-/* --------About ----------*/
 .about {
-    padding: 80px 0;
-    color: #ffffff;
-
+    color: #ababab;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .about-col-1 {
     flex-basis: 35%;
+
 }
 
 .about-col-1 img {
-    width: 100%;
+    width: 93%;
     border-radius: 15px;
+
 }
 
 .about-col-2 {
     flex-basis: 60%;
+    margin-top: -40px;
+
 }
 
-.sub-tile h1 {
-    font-size: 60px;
-    font-weight: 900;
+.sub-tile {
+    font-size: 50px;
+    color: #fff;
 }
 
 .tab-titles {
     display: flex;
-    margin: 20px 0 40px;
+    gap: 15%;
+    align-items: center;
+
 }
 
-.tab-link {
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
+.tab-1-link {
+    color: white;
+    font-size: 20px;
     cursor: pointer;
     position: relative;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
 }
 
-.tab-link::after {
+
+.tab-1-link::after {
     content: "";
-    width: 0;
-    height: 3px;
-    background: #ff004f;
     position: absolute;
     left: 0;
-    bottom: -6px;
-    transition: 0.5s;
+    bottom: -5px;
+    width: 0%;
+    height: 5px;
+    background-color: #ff004f;
+    transition: all 0.5s ease;
 }
 
-.tab-link:hover::after {
+
+.tab-1-link:hover::after {
     width: 100%;
-}
-
-.tab-contents ul li {
-    list-style: none;
-    margin: 10px 0;
-}
-
-.tab-contents ul li span {
-    font-size: 14px;
-    color: #ff004f;
 }
 
 .tab-contents {
     display: none;
+    /* by default sab hidden */
 }
 
 .tab-contents.active-tab {
     display: block;
+    /* sirf active-tab dikhaye */
 }
 
-/* --------------Services------------- */
-
-
-
-.sub-tile {
-    color: #fff;
+.Services {
+    padding: 80px 60px;
 }
 
-.services {
-    padding: 30px 0;
+.Container {
+    padding-left: 60px;
+
+
+
 }
 
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+.Services-list {
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 100px;
+    box-sizing: border-box;
     margin-top: 50px;
     color: #fff;
-    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    height: 80%;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ababab;
+    padding: 30px 50px;
+    border-radius: 14px;
+    transition: background-color 0.5s ease;
+}
+
+.service-card:hover {
+    background-color: #ff004f;
+    transform: translateY(-20px);
 
 }
 
-.services-list div {
+.first {
+    margin-top: 25px;
+}
+
+.firs {
+    margin-top: -25px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+/*---------------------Work----------------------*/
+.Services-Wrapper {
+    padding: 80px 60px;
+}
+
+.Main-Wrapper {
+    padding-left: 60px;
+}
+
+.Work-Section {
+    color: white;
+    cursor: pointer;
+    padding: 60px 69px;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.Services-list div {
     background-color: #262626;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-right: 10px;
-    transition: background 0.5s, transform 0.5s;
+    border-right: 14px;
+    padding: 30px 50px;
+
 }
 
-.services-list div i {
+.Services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
-
 }
 
-.services-list div h2 {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
+.WorkSection {
+    padding: 50px 0;
 }
 
-.services-list div a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.services-list div:hover {
-    background: #ff004f;
-    transform: translateY(-20px);
-}
-
-/* -------------portfolio------------- */
-.portfolio {
-    padding: 50px;
-}
-
-.work-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+.Card-Group {
+    display: flex;
+    gap: 8px;
     margin-top: 50px;
 }
 
-.work {
+.Work {
     border-radius: 10px;
-    position: relative;
     overflow: hidden;
-        transition: transform 0.5s;
-    cursor: pointer;
-}
-    
+    position: relative;
+    color: white;
 
-.work img {
+}
+
+.Work img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
-    cursor: pointer;
+}
+
+.active-link {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.5s ease;
+
 }
 
 .layer {
-    color: #fff;
-    width: 100%;
+    width: 81%;
+
     height: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     border-radius: 10px;
@@ -244,26 +286,45 @@ nav ul li a:hover::after {
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    box-sizing: border-box;
-}
-.layer h3{
-  font-weight: 500;
-  margin-bottom: 20px;
+    font-size: 14px;
+    transition: height 0.5s;
 }
 
-.layer a{
-  margin-top: 20px;
-  color: #ff004f;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 60px;
-  background: #fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-align: center;
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
-.work:hover img{
-  transform: scale(1.1);
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    font-size: 18px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.Work:hover img {
+    transform: scale(1.2);
+}
+
+.Work:hover .layer {
+    height: 100%;
+}
+.btn{
+    margin: 50px auto;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background-color: #ff004f;
 }
